@@ -1,8 +1,8 @@
 # Consent and Autonomy
 
-When an agent takes actions on the user's behalf, consent stops being a one-time onboarding checkbox and becomes a per-action, per-scope, revocable contract. This skill is the canonical home for that contract.
+When an agent takes actions on the user's behalf, consent stops being a one-time onboarding checkbox and becomes a per-action, per-scope, revocable contract. This guide is the canonical home for that contract.
 
-Related but different: `./safety-privacy.md` covers consent for **data collection**; this skill covers consent for **actions**.
+Related but different: `./safety-privacy.md` covers consent for **data collection**; this guide covers consent for **actions**.
 
 ## Checklist
 

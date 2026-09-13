@@ -28,7 +28,17 @@ Instead of bloating the context window with dozens of rules, you operate as an *
 Use when the user asks to review, design, or improve a specific component, screen, or user flow (e.g., *"review the onboarding flow"*, *"check color contrast"*, *"improve checkout form validation"*, *"audit error states"*).
 
 1. **Identify Relevant Domains**: Consult the [Routing Table](#routing-table) below.
-2. **Load Focused References**: Use the environment's file reading tool (`Read` in Claude Code, `view_file` in Antigravity) to read **only** the 1–2 relevant reference guides from `references/`. Do not load unneeded modules.
+2. **Load Focused References**: Use the environment's file reading tool (`Read` in Claude Code, `view_file` in Antigravity) to read **only** the guides the routing table returned. Do not load unneeded modules.
+
+   **How many guides to load — one rule, used everywhere:**
+
+   | Scope | Cap |
+   |---|---|
+   | A component or a single screen | 1–2 guides |
+   | A flow or a cross-cutting feature | up to 5 guides |
+   | The whole app | the 7 pillars below, not the cap |
+
+   If more look relevant than the cap allows, pick the strongest fit and list the rest under "Not reviewed" in the report.
 3. **Inspect Implementation**: Examine UI code, markup, styles, or running state in the codebase using search tools (`Grep` / `grep_search`, `Glob` / `find_by_name`).
 4. **Evaluate & Report**: Assess the implementation against domain heuristics and report findings with concrete line citations and actionable diffs.
 

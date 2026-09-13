@@ -6,7 +6,7 @@ What to keep loaded, what to summarize, what to drop.
 
 - The user's original request, verbatim.
 - The scope classification.
-- The routing decision (which 5 skills, which excluded).
+- The routing decision (which guides were loaded, which excluded).
 - The current findings table.
 - Evidence citations by reference (path/screen name), not full re-quotes.
 
@@ -23,7 +23,7 @@ What to keep loaded, what to summarize, what to drop.
 
 ## On long-context models (1M tokens)
 
-Having a 1M context window does not mean using it. Every extra loaded skill adds instructions the model will follow literally. The routing cap (5) exists because of behavior, not memory.
+Having a 1M context window does not mean using it. Every extra loaded guide adds instructions the model will follow literally. The routing cap (5) exists because of behavior, not memory.
 
 ## On multi-turn reviews
 
@@ -31,4 +31,4 @@ If the user comes back with follow-up questions:
 
 - Do NOT re-run the whole review.
 - Answer from the existing findings table.
-- If the follow-up needs a new skill you didn't load, load it and add its findings as a delta section, not as a rewrite.
+- If the follow-up needs a guide you didn't load, load it and add its findings as a delta section, not as a rewrite.

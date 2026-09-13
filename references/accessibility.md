@@ -34,7 +34,7 @@ The single most effective test: complete every primary flow with the screen read
 - **Android:** `contentDescription`, `importantForAccessibility`, `AccessibilityManager.isEnabled()`, `sp` units for user-scalable text.
 - **Web:** ARIA landmarks and roles; `prefers-reduced-motion`, `prefers-contrast`, `forced-colors` media queries.
 
-## Evidence rules for this skill
+## Evidence rules for this guide
 
 Contrast ratios estimated from a JPEG must be marked `Inferred` (see `../agent/evidence-protocol.md`). Screen-reader behavior from a static image is always `Unknown` — needs running app.
 

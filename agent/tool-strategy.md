@@ -1,6 +1,6 @@
 # Tool Strategy
 
-When to reach for a tool during a UX review, and which one. Loaded when a skill's finding depends on evidence a tool can produce.
+When to reach for a tool during a UX review, and which one. Loaded when a guide's finding depends on evidence a tool can produce.
 
 ## Decision table
 
@@ -26,4 +26,4 @@ When to reach for a tool during a UX review, and which one. Loaded when a skill'
 - Running "grep -r ." to explore. Grep for the specific term the finding depends on.
 - Loading the full component tree to check one style rule.
 - Taking a screenshot of a screen you already have a screenshot of.
-- Using a browser fetch to look up general UX advice mid-review. The skills already contain it.
+- Using a browser fetch to look up general UX advice mid-review. The guides already contain it.

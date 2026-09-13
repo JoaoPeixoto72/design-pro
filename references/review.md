@@ -35,9 +35,9 @@ If the request is ambiguous, ask ONE clarifying question with concrete options. 
 | Agent takes actions on user's behalf | `./consent-and-autonomy.md`, `./ai-agent.md`, `./safety-privacy.md` |
 | Multimodal input (camera / voice / scan / screenshot) | `./multimodal-input.md`, `./safety-privacy.md`, `./error-handling.md` |
 | Sharing / favorites / power features | `./utility.md` |
-| Whole app / store readiness | `./general.md` plus the 6 pillars in `../SKILL.md` |
+| Whole app / store readiness | `./general.md` plus the 7 pillars in `../SKILL.md` |
 
-Outside a whole-app audit, load **at most 5** guides. If more look relevant, pick the 5 with the strongest fit and note the others under "Not reviewed" in the report.
+Respect the load cap in `../SKILL.md`: 1-2 guides for a component or single screen, up to 5 for a flow or feature, the 7 pillars for a whole app. If more look relevant than the cap allows, pick the strongest fit and note the others under "Not reviewed" in the report.
 
 ## Step 3 — Gather evidence
 

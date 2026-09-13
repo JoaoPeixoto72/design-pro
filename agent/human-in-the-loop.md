@@ -12,7 +12,7 @@ When to act, when to ask, when to stop.
 | Fix requested, reversible, out of scope | Ask: "This touches X, outside the current scope. Include it, or skip?" |
 | Fix requested, irreversible | Ask before acting. Show the plan and the affected surfaces. |
 | Fix that removes functionality | Ask before acting, even if reversible. |
-| Contradiction between two skills | Act, pick one, cite the tradeoff. Do not ask. |
+| Contradiction between two guides | Act, pick one, cite the tradeoff. Do not ask. |
 | Missing input with a safe default | Act with the default, state the assumption. Do not ask. |
 | Missing input, no safe default | Ask. |
 

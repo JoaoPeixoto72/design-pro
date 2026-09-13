@@ -14,9 +14,9 @@ How the agent should approach a UX review. Loaded from the reference guides by p
 
 ```
 Scope   → identify (screen | flow | feature | app).
-Guides  → route via the SKILL.md routing table, max 2.
+Guides  → route via the SKILL.md routing table, within its load cap.
 Evidence→ gather per agent/evidence-protocol.md. If visual, per agent/visual-inspection.md.
-Apply   → run each skill's checklist ONCE.
+Apply   → run each guide's checklist ONCE.
 Report  → templates/review-report.md.tmpl.
 Stop.
 ```

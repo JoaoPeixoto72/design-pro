@@ -5,14 +5,14 @@ Read this first if you are an AI agent working in a repo that has `design-pro` i
 ## What lives here
 
 - `SKILL.md` — the orchestrator. It carries the routing table; it is the only file loaded up front.
-- `references/*.md` — 21 UX domain guides. Load only the 1–2 the routing table points at for the current task.
+- `references/*.md` — 21 UX domain guides. Load only the ones the routing table points at, within the load cap.
 - `agent/*.md` — shared operating model referenced from the guides. Do NOT load all of these at once. Load a specific file only when something you already loaded points to it.
 - `adapters/<model>.md` — model-specific loading rules. The IDE has already applied these; you do not need to read them yourself.
 
 ## Discovery order
 
 1. Read `SKILL.md` — its routing table maps the request to the guides that apply.
-2. Load **at most 2** reference guides for a surgical review; for a holistic audit, follow the 6 pillars in `SKILL.md` and load each pillar's guides as you reach it.
+2. Respect the load cap in `SKILL.md`: 1-2 guides for a component or single screen, up to 5 for a flow or feature. For a holistic audit, follow the 7 pillars and load each pillar's guides as you reach it.
 3. Load an `agent/*.md` file only when a guide you loaded explicitly references it.
 
 ## Hard rules
