@@ -1,6 +1,6 @@
 # UX of Agent-Driven Products
 
-This is different from `ux-ai-automation`, which covers AI features embedded in a traditional product (a "summarize" button, a smart filter, a recommendation row). This skill is for products where the AI **is** the surface — the user states an intent and the product plans, acts, and reports.
+This is different from `./ai-automation.md`, which covers AI features embedded in a traditional product (a "summarize" button, a smart filter, a recommendation row). This guide is for products where the AI **is** the surface — the user states an intent and the product plans, acts, and reports.
 
 ## Checklist
 

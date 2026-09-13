@@ -1,6 +1,8 @@
-# UX Review — Router
+# UX Review — Audit Protocol
 
-You are running a **single-pass UX review**. You will pick the right category skills, apply them once, and produce the shared report. You will NOT loop, re-verify, or expand scope.
+The protocol for a **single-pass UX review**. You apply the selected guides once and produce the shared report. You will NOT loop, re-verify, or expand scope.
+
+Routing is decided in `../SKILL.md`, not here. This file governs *how* the review runs once the guides are chosen.
 
 ## Step 1 — Identify scope
 
@@ -13,42 +15,44 @@ Classify the request as one of:
 
 If the request is ambiguous, ask ONE clarifying question with concrete options. Do not send a survey.
 
-## Step 2 — Select category skills
+## Step 2 — Confirm the selected guides
 
-Use the routing table. Load **at most 5** skills. If more look relevant, pick the 5 with the strongest fit and note the others under "Not reviewed" in the report.
+`../SKILL.md` has already routed the request. Use the table below only to sanity-check that selection against the scope you just classified, and to widen it when a whole-app audit needs more than the routing table returned.
 
-| Scope | Skills to load |
+| Scope | Guides |
 |---|---|
-| Any screen (baseline) | `ux-visual-design`, `ux-accessibility`, `ux-content` |
-| Onboarding / first run | `ux-help-onboarding`, `ux-user-account`, `ux-safety-privacy` |
-| Login / sign-up / auth | `ux-user-account`, `ux-forms`, `ux-safety-privacy` |
-| Forms / checkout / data entry | `ux-forms`, `ux-error-handling`, `ux-information-architecture` |
-| Search / discovery | `ux-search`, `ux-information-architecture` |
-| Navigation / app structure | `ux-navigation`, `ux-information-architecture` |
-| Settings / preferences | `ux-settings`, `ux-notifications`, `ux-safety-privacy` |
-| Errors / offline / edge cases | `ux-error-handling`, `ux-network` |
-| Notifications | `ux-notifications`, `ux-settings` |
-| AI features inside a product | `ux-ai-automation`, `ux-content` |
-| Products that ARE agents | `ux-ai-agent`, `ux-consent-and-autonomy`, `ux-error-handling` |
-| Agent takes actions on user's behalf | `ux-consent-and-autonomy`, `ux-ai-agent`, `ux-safety-privacy` |
-| Multimodal input (camera / voice / scan / screenshot) | `ux-multimodal-input`, `ux-safety-privacy`, `ux-error-handling` |
-| Sharing / favorites / power features | `ux-utility` |
-| Whole app / store readiness | `ux-general` + up to 4 more, chosen by what the app's surfaces touch |
+| Any screen (baseline) | `./visual-design.md`, `./accessibility.md`, `./content.md` |
+| Onboarding / first run | `./help-onboarding.md`, `./user-account.md`, `./safety-privacy.md` |
+| Login / sign-up / auth | `./user-account.md`, `./forms.md`, `./safety-privacy.md` |
+| Forms / checkout / data entry | `./forms.md`, `./error-handling.md`, `./information-architecture.md` |
+| Search / discovery | `./search.md`, `./information-architecture.md` |
+| Navigation / app structure | `./navigation.md`, `./information-architecture.md` |
+| Settings / preferences | `./settings.md`, `./notifications.md`, `./safety-privacy.md` |
+| Errors / offline / edge cases | `./error-handling.md`, `./network.md` |
+| Notifications | `./notifications.md`, `./settings.md` |
+| AI features inside a product | `./ai-automation.md`, `./content.md` |
+| Products that ARE agents | `./ai-agent.md`, `./consent-and-autonomy.md`, `./error-handling.md` |
+| Agent takes actions on user's behalf | `./consent-and-autonomy.md`, `./ai-agent.md`, `./safety-privacy.md` |
+| Multimodal input (camera / voice / scan / screenshot) | `./multimodal-input.md`, `./safety-privacy.md`, `./error-handling.md` |
+| Sharing / favorites / power features | `./utility.md` |
+| Whole app / store readiness | `./general.md` plus the 6 pillars in `../SKILL.md` |
+
+Outside a whole-app audit, load **at most 5** guides. If more look relevant, pick the 5 with the strongest fit and note the others under "Not reviewed" in the report.
 
 ## Step 3 — Gather evidence
 
 Before writing any finding, follow `../agent/evidence-protocol.md` and, if the material includes screenshots or a running app, `../agent/visual-inspection.md`. Each finding gets a `Confidence` value: `Observed` (you saw the specific element), `Inferred` (deduced without direct sight), or `Unknown` (needs a test you cannot run). `Unknown` is not a failure.
 
-## Step 4 — Apply each skill exactly once
+## Step 4 — Apply each guide exactly once
 
-Read each selected skill's checklist. For each item, produce one row. Do NOT run the checklist again after writing the report.
+Read each selected guide's checklist. For each item, produce one row. Do NOT run the checklist again after writing the report.
 
 ## Step 5 — Report
 
 Use `../templates/review-report.md.tmpl`. The structure:
 
 1. **Summary** — 2 to 4 sentences: overall quality, biggest risk, biggest strength.
-2. **Findings by category** — one table per skill, columns: `Item | Verdict | Evidence | Severity | Confidence`. Verdicts: `Pass`, `Fail`, `N/A`. Severities: `Blocker`, `Major`, `Minor`. Confidence per Step 3.
+2. **Findings by category** — one table per guide, columns: `Item | Verdict | Evidence | Severity | Confidence`. Verdicts: `Pass`, `Fail`, `N/A`. Severities: `Blocker`, `Major`, `Minor`. Confidence per Step 3.
 3. **Top fixes** — 3 to 5, ranked. Each fix is a concrete change to make, not a restatement of the problem. Include the affected screen / component / file.
 4. **Not reviewed** — categories or items you deliberately excluded, with a one-line reason.
 
@@ -65,7 +69,7 @@ Use `../templates/review-report.md.tmpl`. The structure:
 - `../agent/agent-operating-model.md` — the five stances, the review turn, what NOT to do.
 - `../agent/evidence-protocol.md` — Observed / Inferred / Unknown and citation format.
 - `../agent/visual-inspection.md` — how to read screenshots and running apps.
-- `../agent/cross-skill-orchestration.md` — precedence and deduplication across skills.
+- `../agent/cross-skill-orchestration.md` — precedence and deduplication across guides.
 - `../agent/human-in-the-loop.md` — when to ask vs act.
 - `../agent/context-management.md` — keep / summarize / drop rules during a review.
 - `../agent/task-decomposition.md` — how to run a whole-app review as focused groups.

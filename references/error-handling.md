@@ -44,7 +44,7 @@ Examples:
 
 ## Empty-state anatomy (canonical)
 
-Other skills cite this section — do not restate it in `ux-search`, `ux-visual-design`, `ux-help-onboarding`.
+Other skills cite this section — do not restate it in `./search.md`, `./visual-design.md`, `./help-onboarding.md`.
 
 Every empty state has four parts:
 

@@ -60,13 +60,14 @@ Ideal para tarefas específicas. O orquestrador identifica o domínio e lê apen
 - *"Como melhorar a gestão de erros na pesquisa?"* → consulta `references/error-handling.md` e `references/search.md`.
 
 ### 2. Modo de Auditoria Holística (Full Product UX Audit)
-Ideal para avaliações completas de lançamento de produto (App Store / Google Play / Web Launch). O orquestrador audita os 6 pilares de UX:
+Ideal para avaliações completas de lançamento de produto (App Store / Google Play / Web Launch). O orquestrador audita os 7 pilares de UX:
 1. **Arquitetura de Informação & Navegação**
 2. **Acessibilidade & Hierarquia Visual**
 3. **Interação, Formulários & Onboarding**
 4. **Feedback de Sistema, Notificações & Resiliência Offline**
 5. **Autenticação, Privacidade & Autonomia do Utilizador**
 6. **Conteúdo, Microcópia & Tom de Voz**
+7. **Fundamentos da App & Prontidão para a Loja**
 
 ---
 
@@ -85,18 +86,18 @@ Todos os módulos residem em `references/` e são consultados pelo agente sob de
 | **Navegação** | `references/navigation.md` | Estrutura de menus, breadcrumbs, regra dos 3 toques, botão voltar. |
 | **Arquitetura de Info** | `references/information-architecture.md` | Modelos mentais, redução de carga cognitiva, categorização. |
 | **Autenticação & Contas** | `references/user-account.md` | Fluxos de registo/login sem atrito, perfil, eliminação de conta. |
-| **Consentimento & Autonomia** | `references/consent-and-autonomy.md` | Sem dark patterns, cookies claros, GDPR, escada de confirmação. |
+| **Consentimento & Autonomia** | `references/consent-and-autonomy.md` | Consentimento para ações que o agente toma por nós: pré-visualização, escada de confirmação, undo, escopos revogáveis. |
 | **Notificações** | `references/notifications.md` | Respeito pelo utilizador, canais granulares, toasts e alertas. |
-| **Agentes de IA** | `references/ai-agent.md` | Copilots, streaming, visibilidade de raciocínio, transparência. |
-| **Automação IA** | `references/ai-automation.md` | Escada de autonomia, desfazer ações de IA, intervenção humana. |
+| **Agentes de IA** | `references/ai-agent.md` | Produtos em que a IA **é** a superfície: planeia, age e reporta. Confiança, autonomia, reversibilidade. |
+| **Automação IA** | `references/ai-automation.md` | Funcionalidades de IA dentro de um produto normal: botão resumir, recomendações, filtro inteligente. |
 | **Entrada Multimodal** | `references/multimodal-input.md` | Voz, câmara, leitor de código de barras, uploads de ficheiros. |
 | **Pesquisa** | `references/search.md` | Velocidade, filtros, estados zero, tolerância a erros de digitação. |
 | **Definições** | `references/settings.md` | Preferências, tema escuro/claro, idioma, limpeza de cache. |
 | **Conteúdo & Microcópia** | `references/content.md` | Linguagem clara, CTAs orientados a ação, tom de voz consistente. |
-| **Geral & Touch** | `references/general.md` | Ergonomia de polegar, áreas seguras, layout shifts (CLS). |
-| **Revisão & Auditoria** | `references/review.md` | Protocolo mestre de auditoria, cálculo de severidades e matriz. |
-| **Segurança & Privacidade** | `references/safety-privacy.md` | Proteção de dados sensíveis, sessões seguras, integridade. |
-| **Utilitários** | `references/utility.md` | Helpers de medição, badges de confiança e micro-interações. |
+| **Fundamentos & Loja** | `references/general.md` | Ícone, splash, atualização forçada, sync na nuvem, backup, widgets, versionamento. |
+| **Revisão & Auditoria** | `references/review.md` | Protocolo de revisão em passagem única: escopo, evidência, relatório, regras de paragem. |
+| **Segurança & Privacidade** | `references/safety-privacy.md` | Biometria, passkeys, prompts de permissão, 2FA, GDPR, gestão multi-dispositivo. |
+| **Utilitários** | `references/utility.md` | Favoritos, marcadores, partilha nativa, área de transferência, personalização. |
 
 ---
 
