@@ -1,9 +1,11 @@
 ---
 name: design-pro
-description: Audits, designs and reviews user experience (UX/UI), accessibility (WCAG 2.2 AA), onboarding flows, forms, visual hierarchy and design systems in web and mobile applications. Use to audit a component, a user flow, or to run a holistic product review. Do NOT use for backend code audits or infrastructure security — use production-audit.
+description: Audits, designs and reviews user experience (UX/UI), accessibility (WCAG 2.2 AA), onboarding flows, forms, visual hierarchy and design systems in web and mobile applications. Use to audit a component, a user flow, or to run a holistic product review. Do NOT use for backend code audits, infrastructure or dependency security. Do NOT use to build or migrate a project's own design system — that is `ui-system`.
 argument-hint: "[screen | flow | feature | app]"
-model: generic
-effort: standard
+# No `model:` on purpose: this skill is profile-agnostic, and an auditor resolves
+# `generic` from its absence. A profile name in `model:` is not a model id — no
+# harness can resolve `generic`, so it would be an unresolvable value, not a default.
+effort: medium
 allowed-tools: Read, Glob, Grep
 disallowed-tools: Edit, Write, MultiEdit, NotebookEdit
 ---
