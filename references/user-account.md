@@ -9,7 +9,7 @@ The account experience spans first login to long-term retention. Every friction 
 | Social / SSO | Sign in with Apple required on iOS if any social login exists. Google standard everywhere. |
 | Logout confirmation | One dialog with a clear consequence. |
 | Forgot password | Email link or SMS OTP. Links expire in 15 minutes. |
-| Thumb-friendly primary action | Primary CTA in the bottom 40% of the screen. |
+| Thumb-friendly primary action | Primary CTA within thumb reach — see `./accessibility.md`, which owns the reachability rule. |
 | Password-manager support | Autofill on all login / registration fields. Paste allowed. Correct content-type hints. |
 | Browse without account | Users explore before the value wall. |
 | Last activity restored | App restores last position or in-progress action on relaunch. |

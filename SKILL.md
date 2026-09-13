@@ -72,7 +72,7 @@ Match user intents to specialized reference modules located in `references/`:
 | **Visual Design & Layout** (typography, color palette, spacing scale, hierarchy) | `references/visual-design.md` | `references/accessibility.md` | 4/8pt grid, optical balance, type scale |
 | **Errors & System Feedback** (empty states, 404, field errors, recovery paths) | `references/error-handling.md` | `references/network.md` | Constructive recovery, reassurance |
 | **Network & Offline** (offline sync, connectivity loss, optimistic UI, caching) | `references/network.md` | `references/error-handling.md` | Transparent degraded modes |
-| **Navigation & Menus** (tabs, drawers, breadcrumbs, back button, deep links) | `references/navigation.md` | `references/information-architecture.md` | Predictable wayfinding, 3-tap rule |
+| **Navigation & Menus** (tabs, drawers, breadcrumbs, back button, deep links) | `references/navigation.md` | `references/information-architecture.md` | Predictable wayfinding, no dead ends |
 | **Information Architecture** (content grouping, search vs browse, mental models) | `references/information-architecture.md` | `references/search.md` | Cognitive load reduction |
 | **Authentication & Accounts** (login, register, forgot password, profile, deletion) | `references/user-account.md` | `references/safety-privacy.md` | Frictionless auth, account control |
 | **Privacy, Permissions & GDPR** (cookie banners, permission prompts, biometrics, 2FA, data export/erasure) | `references/safety-privacy.md` | `references/settings.md` | GDPR, privacy by default, no dark patterns |
@@ -98,6 +98,16 @@ Match user intents to specialized reference modules located in `references/`:
    - **WCAG 2.2 AA**: Contrast (4.5:1 text, 3:1 UI), minimum target size (24×24px floor, 44×44px recommended), focus visibility, label association.
    - **Nielsen Norman 10 Usability Heuristics**: Visibility of system status, match between system and real world, user control and freedom, consistency and standards, error prevention, recognition rather than recall, flexibility, aesthetic & minimalist design, error recovery, help & documentation.
    - **Platform Guidelines**: Apple Human Interface Guidelines (HIG) and Google Material Design 3.
+
+   **Norm or default — know which you are citing.** Most numbers in the guides are neither WCAG nor platform rules: `400ms` before a loading indicator, `~300ms` debounce, `~40` characters of notification payload, `2s` splash, `5–10` recent searches. They are defensible defaults, not standards.
+
+   | The guide cites a standard | The guide gives a bare number |
+   |---|---|
+   | Name it (`WCAG 2.2 SC 2.5.8`, `HIG`, `Material 3`) | Do not name a standard — there is none |
+   | Any severity the evidence supports | `Minor` at most, unless the product's own spec sets the number |
+   | A miss is a violation | A miss is a deviation from a common default |
+
+   `references/accessibility.md` carries a criterion column and puts `—` where no criterion exists. Read that `—` as "this is a default"; never promote it to a norm in the report.
 3. **No Dark Patterns**: Reject deceptive designs, hidden costs, un-cancellable subscriptions, pre-selected marketing checkboxes, or confusing consent modals.
 4. **Actionable Recommendations**: Always provide the concrete fix: CSS rule, HTML structure, copy tweak, or code snippet.
 

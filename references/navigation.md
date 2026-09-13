@@ -8,7 +8,7 @@ Navigation is the app's skeleton. When it is invisible and predictable, users fe
 |---|---|
 | Home reachable everywhere | Home tab or logo returns to root from any screen. |
 | Persistent primary nav | Tab bar / bottom nav visible on primary screens. |
-| ≤3 taps to primary content | Any primary content reachable in 3 taps from home. |
+| Primary content reachable without getting lost | Every primary destination has an obvious path from home. Tap count is a smell, not a threshold: a long path that is signposted at every step beats a short one through an ambiguous menu. Do not file a finding on depth alone. |
 | Current location indicator | Active tab highlighted. Deep screens carry a clear title or breadcrumb. |
 | Android back button correct | Follows the back stack; never exits the app unexpectedly. |
 | Back / close on every pushed screen | Always in the top-left corner. |
@@ -31,6 +31,7 @@ Navigation is the app's skeleton. When it is invisible and predictable, users fe
 
 - Pushing a screen that should have been a modal — it breaks back-stack expectations.
 - Nesting more than 2 levels of drill-down without a clear escape.
+- Counting taps as the finding. The "3-tap rule" is folklore — its web ancestor, the 3-click rule, was refuted by UIE's click study (620 tasks, no relationship between click count and success or satisfaction). What makes users leave is not knowing where they are.
 - Hiding search or account behind a hamburger on a content-heavy app.
 
 ## Related
