@@ -1,9 +1,3 @@
----
-name: ux-user-account
-description: Account and authentication UX — sign-up, login, social sign-in and SSO (Sign in with Apple required on iOS when any social login exists), password recovery, session management, biometric re-entry, gestures and shortcuts, account deletion, and location access. Use when designing or reviewing authentication, user profiles, account settings, or any signed-in interaction.
-allowed-tools: Read, Glob, Grep
----
-
 # User Account
 
 The account experience spans first login to long-term retention. Every friction point in auth is a potential drop-off. Every confusing account flow erodes trust.
@@ -24,7 +18,7 @@ The account experience spans first login to long-term retention. Every friction 
 | Location access | Requested only when a feature needs it, with a specific reason. |
 | Persistent session | Silent refresh tokens; never force re-login on token expiry alone. |
 | Biometric re-entry | Face ID / fingerprint for re-entry after backgrounding, not only at first login. |
-| Notification opt-in per type | See `../ux-notifications`. |
+| Notification opt-in per type | See `./.md`. |
 
 ## Patterns
 
@@ -42,8 +36,7 @@ The account experience spans first login to long-term retention. Every friction 
 
 ## Related
 
-- `../ux-safety-privacy` — biometrics, 2FA, passkeys.
-- `../ux-forms` — input types, validation, autofill on auth forms.
-- `../ux-settings` — account section structure.
-- `../ux-notifications` — notification opt-in timing and granularity.
-
+- `./.md` — biometrics, 2FA, passkeys.
+- `./.md` — input types, validation, autofill on auth forms.
+- `./.md` — account section structure.
+- `./.md` — notification opt-in timing and granularity.

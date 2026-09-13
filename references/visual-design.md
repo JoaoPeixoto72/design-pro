@@ -1,9 +1,3 @@
----
-name: ux-visual-design
-description: Visual design system review for mobile and web — typography, color, spacing, icons, animation, dark mode, touch targets, elevation, RTL, safe areas. Use when reviewing or building a design system, auditing UI quality, or setting component and token guidelines. Not the home for empty states (see ux-error-handling) or contrast ratios (see ux-accessibility).
-allowed-tools: Read, Glob, Grep
----
-
 # Visual Design
 
 Visual design communicates hierarchy, state, and intent. Every spacing decision, color choice, and animation is a signal the user reads.
@@ -89,8 +83,7 @@ Use each platform's native scale, not one forced on both.
 
 ## Related
 
-- `../ux-accessibility` — contrast ratios, Dynamic Type, reduce-motion (WCAG floors).
-- `../ux-content` — the words that fill the components.
-- `../ux-error-handling` — canonical empty-state standards.
+- `./.md` — contrast ratios, Dynamic Type, reduce-motion (WCAG floors).
+- `./.md` — the words that fill the components.
+- `./.md` — canonical empty-state standards.
 - `../agent/visual-inspection.md` — how to cite regions of a screenshot in a finding.
-

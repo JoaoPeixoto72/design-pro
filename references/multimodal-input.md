@@ -1,9 +1,3 @@
----
-name: ux-multimodal-input
-description: UX of multimodal input — camera and photo pickers, document / receipt / ID scan (OCR), QR and barcode scan, voice input and dictation, live speech transcription, image drop / paste, screen-share and screen-capture handoff, code-from-screenshot detection. Use when designing or reviewing any surface that lets the user provide input as a photo, scan, voice recording, or shared screen — including AI products that accept these as prompts.
-allowed-tools: Read, Glob, Grep
----
-
 # Multimodal Input
 
 Modern products routinely accept camera, voice, scan, image drop, or screen share as first-class inputs — because modern models are natively multimodal. The UX of *providing* that input is a separate craft from the UX of the AI that processes it.
@@ -60,11 +54,10 @@ Modern products routinely accept camera, voice, scan, image drop, or screen shar
 
 ## Related
 
-- `../ux-safety-privacy` — permission priming, denial recovery, data-protection rules.
-- `../ux-help-onboarding` — first-run guidance for camera / voice.
-- `../ux-forms` — camera / voice / scan as inputs to form fields.
-- `../ux-ai-agent` — screenshots and voice as prompts to an agent.
-- `../ux-search` — voice search entry point.
-- `../ux-error-handling` — fallback paths when a mode fails.
+- `./.md` — permission priming, denial recovery, data-protection rules.
+- `./.md` — first-run guidance for camera / voice.
+- `./.md` — camera / voice / scan as inputs to form fields.
+- `./.md` — screenshots and voice as prompts to an agent.
+- `./.md` — voice search entry point.
+- `./.md` — fallback paths when a mode fails.
 - `../agent/tool-strategy.md` — which tool to reach for when validating multimodal capture.
-

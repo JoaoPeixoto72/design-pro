@@ -14,7 +14,7 @@ Opus 5 in particular:
 
 - Thinking is on by default; do NOT add "double-check", "verify at the end", "include a final verification step" — over-verification will hurt output.
 - Response length: state brevity requirements explicitly ("keep the summary to 2 sentences"). Lowering `effort` does not shorten response.
-- Delegation: Opus 5 delegates to subagents readily. The `ux-review` router's 5-skill cap is essential; add `CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS` env at 2 for review sessions. The env vars `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH` and `CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS` require **Claude Code 2.1.217 or later** — pin the SDK before pointing it at Opus 5 or the caps are silently ignored. The Agent SDK also exposes `max_budget_usd` as a hard spend cap.
+- Delegation: Opus 5 delegates to subagents readily. The `references/review.md` router's 5-skill cap is essential; add `CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS` env at 2 for review sessions. The env vars `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH` and `CLAUDE_CODE_MAX_CONCURRENT_SUBAGENTS` require **Claude Code 2.1.217 or later** — pin the SDK before pointing it at Opus 5 or the caps are silently ignored. The Agent SDK also exposes `max_budget_usd` as a hard spend cap.
 - Fable 5: never ask for reasoning to be revealed or transcribed — triggers `reasoning_extraction` refusal.
 
 ## Effort recommendation for reviews

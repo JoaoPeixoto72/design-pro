@@ -1,37 +1,29 @@
 # design-pro
 
-**Model-agnostic UX & Design System skills for agentic IDEs.** Procedural, multimodal, and verifiable Agent Skills built for Google Antigravity (Gemini 3.8 Flash), Claude Code (Opus 5 / Sonnet 5 / Fable 5), and Codex CLI (GPT-5.6 Sol / Terra / Luna).
+**Master UX & Design System Orchestrator for Agentic IDEs.** Procedural, multimodal, and verifiable Agent Skill built for Google Antigravity (Gemini 3.8 Flash), Claude Code (Opus 5 / Sonnet 5 / Fable 5), and Codex CLI (GPT-5.6 Sol / Terra / Luna).
 
-Conforme a especificação aberta [Agent Skills](https://agentskills.io), cada skill é autónoma, sem scripts intermediários ou dependências frágeis de symlinks.
-
----
-
-## O que é o Design-Pro?
-
-O **design-pro** é uma suite profissional de 21 skills de UX e design de produto, otimizadas para modelos de raciocínio de 2026:
-- **Single-pass com Stopping Rules:** Evita que os modelos entrem em loops infinitos de verificação ou gastem tokens desnecessários.
-- **Protocolo de Evidência com Confiança:** Toda a falha exige classificação de `Confidence` (`Observed` / `Inferred` / `Unknown`), eliminando alucinações sobre coisas invisíveis em prints ou estados estáticos.
-- **Suporte Nativo a Agentes e Multimodalidade:** Cobertura de ponta para aplicações onde a IA é a interface (`ux-ai-agent`), entradas de voz/câmara/scan (`ux-multimodal-input`) e concessão de autonomia com escada de confirmação (`ux-consent-and-autonomy`).
+Conforme a especificação aberta [Agent Skills](https://agentskills.io), o **design-pro** adota a arquitetura **Hub & References**: uma única skill orquestradora mestre (`SKILL.md`) que carrega sob demanda 21 módulos especializados de referência (`references/`), eliminando o desperdício de tokens no system prompt e garantindo instalação instantânea.
 
 ---
 
-## Como Instalar (Zero Scripts, Sem Complicações)
+## Porque a Arquitetura Unificada?
 
-Não precisa de correr scripts de instalação nem de configurar symlinks. O design-pro é compatível com **dois métodos imediatos**:
+Anteriormente, distribuir 21 pastas soltas causava três grandes problemas:
+1. **Prompt Bloat**: 21 descrições no menu de ferramentas consumiam milhares de tokens em todas as mensagens.
+2. **Hesitação de Roteamento**: O agente hesitava sobre qual mini-skill abrir ao auditar um fluxo complexo.
+3. **Fricção de Instalação**: Exigia copiar 21 pastas separadas ou usar symlinks frágeis.
 
-### Método 1: Copiar e Colar (Drop-in)
+Com a arquitetura unificada:
+- **1 Única Pasta**: `.agents/skills/design-pro/`
+- **1 Único Ponto de Entrada**: `SKILL.md` (Lead UX Designer & Router)
+- **Carregamento Cirúrgico**: O agente consulta apenas o guia relevante em `references/` quando necessário.
+- **Instalação Atómica**: 1 comando `git clone` e fica 100% pronto.
 
-Copie qualquer pasta `ux-*` (ou o repositório inteiro) diretamente para a pasta de skills do seu agente:
+---
 
-| Ferramenta | No Projeto Atual | Global (Todo o Sistema) |
-|---|---|---|
-| **Google Antigravity** | `<projeto>/.agents/skills/` | `~/.gemini/config/skills/` |
-| **Claude Code** | `<projeto>/.claude/skills/` | `~/.claude/skills/` |
-| **Codex CLI** | `<projeto>/.codex/skills/` | `~/.codex/skills/` |
+## Como Instalar (1 Comando no Terminal)
 
-### Método 2: Linha de Comandos (1 linha no Terminal)
-
-**No Google Antigravity (no projeto atual):**
+**No Google Antigravity:**
 ```bash
 git clone https://github.com/JoaoPeixoto72/design-pro.git .agents/skills/design-pro
 ```
@@ -41,64 +33,81 @@ git clone https://github.com/JoaoPeixoto72/design-pro.git .agents/skills/design-
 git clone https://github.com/JoaoPeixoto72/design-pro.git .claude/skills/design-pro
 ```
 
-**Ou com o GitHub CLI:**
+**No Codex CLI / Cursor:**
 ```bash
-gh repo clone JoaoPeixoto72/design-pro .agents/skills/design-pro
+git clone https://github.com/JoaoPeixoto72/design-pro.git .codex/skills/design-pro
 ```
+
+*(Ou simplesmente clona/copia a pasta `design-pro` para dentro do diretório de skills do teu projeto ou perfil global).*
 
 ---
 
-## Catálogo de Skills (21 Categorias)
+## Como Funciona
 
-```
+Quando ativado, o **`design-pro`** atua em dois modos:
+
+### 1. Modo Cirúrgico (Surgical Review)
+Ideal para tarefas específicas. O orquestrador identifica o domínio e lê apenas a referência necessária:
+- *"Revê o fluxo de onboarding da app"* → consulta `references/help-onboarding.md` e `references/forms.md`.
+- *"Valida o contraste e acessibilidade dos botões"* → consulta `references/accessibility.md` e `references/visual-design.md`.
+- *"Como melhorar a gestão de erros na pesquisa?"* → consulta `references/error-handling.md` e `references/search.md`.
+
+### 2. Modo de Auditoria Holística (Full Product UX Audit)
+Ideal para avaliações completas de lançamento de produto (App Store / Google Play / Web Launch). O orquestrador audita os 6 pilares de UX:
+1. **Arquitetura de Informação & Navegação**
+2. **Acessibilidade & Hierarquia Visual**
+3. **Interação, Formulários & Onboarding**
+4. **Feedback de Sistema, Notificações & Resiliência Offline**
+5. **Autenticação, Privacidade & Autonomia do Utilizador**
+6. **Conteúdo, Microcópia & Tom de Voz**
+
+---
+
+## Os 21 Módulos de Referência
+
+Todos os módulos residem em `references/` e são consultados pelo agente sob demanda:
+
+| Módulo | Ficheiro | Foco Principal |
+|---|---|---|
+| **Acessibilidade** | `references/accessibility.md` | WCAG 2.2 AA, leitores de ecrã, contraste, touch targets (44pt). |
+| **Onboarding** | `references/help-onboarding.md` | Time-to-value, compreensão em 10 segundos, primeiro valor. |
+| **Formulários** | `references/forms.md` | Validação inline, autofill, estados de submissão, prevenção de erros. |
+| **Design Visual** | `references/visual-design.md` | Grid 4/8pt, escala tipográfica, tokens, contraste escuro/claro. |
+| **Erros & Feedback** | `references/error-handling.md` | Empty states, 404, recuperação construtiva, mensagens humanas. |
+| **Rede & Offline** | `references/network.md` | Sincronização offline, feedback de degradação, UI otimista. |
+| **Navegação** | `references/navigation.md` | Estrutura de menus, breadcrumbs, regra dos 3 toques, botão voltar. |
+| **Arquitetura de Info** | `references/information-architecture.md` | Modelos mentais, redução de carga cognitiva, categorização. |
+| **Autenticação & Contas** | `references/user-account.md` | Fluxos de registo/login sem atrito, perfil, eliminação de conta. |
+| **Consentimento & Autonomia** | `references/consent-and-autonomy.md` | Sem dark patterns, cookies claros, GDPR, escada de confirmação. |
+| **Notificações** | `references/notifications.md` | Respeito pelo utilizador, canais granulares, toasts e alertas. |
+| **Agentes de IA** | `references/ai-agent.md` | Copilots, streaming, visibilidade de raciocínio, transparência. |
+| **Automação IA** | `references/ai-automation.md` | Escada de autonomia, desfazer ações de IA, intervenção humana. |
+| **Entrada Multimodal** | `references/multimodal-input.md` | Voz, câmara, leitor de código de barras, uploads de ficheiros. |
+| **Pesquisa** | `references/search.md` | Velocidade, filtros, estados zero, tolerância a erros de digitação. |
+| **Definições** | `references/settings.md` | Preferências, tema escuro/claro, idioma, limpeza de cache. |
+| **Conteúdo & Microcópia** | `references/content.md` | Linguagem clara, CTAs orientados a ação, tom de voz consistente. |
+| **Geral & Touch** | `references/general.md` | Ergonomia de polegar, áreas seguras, layout shifts (CLS). |
+| **Revisão & Auditoria** | `references/review.md` | Protocolo mestre de auditoria, cálculo de severidades e matriz. |
+| **Segurança & Privacidade** | `references/safety-privacy.md` | Proteção de dados sensíveis, sessões seguras, integridade. |
+| **Utilitários** | `references/utility.md` | Helpers de medição, badges de confiança e micro-interações. |
+
+---
+
+## Estrutura do Repositório
+
+```text
 design-pro/
-├── ux-review/                  # Router principal + contrato unificado de relatório (máx. 5 skills por review)
-├── ux-visual-design/           # Design system, hierarquia visual, tipografia e espaçamento
-├── ux-accessibility/           # WCAG 2.2 AA, leitor de ecrã, contraste e European Accessibility Act (EAA)
-├── ux-navigation/              # Estrutura de ecrãs, fluxos e gestos nativos de retorno
-├── ux-forms/                   # Formulários, validação inline, prevenção de erros e teclado
-├── ux-search/                  # Pesquisa, sugestões, filtros e relevância
-├── ux-information-architecture/# Taxonomia, categorização e organização de conteúdo
-├── ux-content/                 # Microcópia, clareza textual e tom de voz
-├── ux-error-handling/          # Gestão de falhas, mensagens explicativas, desfazer e empty states
-├── ux-network/                 # Estados offline, retry gracioso e conectividade intermitente
-├── ux-help-onboarding/         # Onboarding progressivo, valor antes da fricção e dicas contextuais
-├── ux-user-account/            # Registo, login, recuperação de password e gestão de sessões
-├── ux-safety-privacy/          # RGPD / GDPR, termos, segurança e consentimento de dados
-├── ux-settings/                # Definições, preferências de conta e persistência
-├── ux-notifications/           # Gestão de alertas, opt-in granular e canais
-├── ux-utility/                 # Partilha, favoritos e ferramentas de produtividade
-├── ux-general/                 # Prontidão para App Store / Google Play e integridade geral
-├── ux-ai-automation/           # Funcionalidades de IA DENTRO de um produto tradicional
-├── ux-ai-agent/                # UX de produtos onde o próprio PRODUTO É UM AGENTE autónomo
-├── ux-multimodal-input/        # Entradas de câmara, microfone, voz em direto, OCR e paste de prints
-├── ux-consent-and-autonomy/    # Escada de confirmação, dry-runs, orçamentos e autonomia de ações
-│
-├── agent/                      # 12 modelos operacionais partilhados de agente
-└── templates/                  # Contrato canónico de relatório de revisão
+├── SKILL.md                 # Orquestrador mestre (Lead UX Designer & Routing Table)
+├── README.md                # Este ficheiro de documentação
+├── LICENSE                  # Licença MIT
+├── agent/                   # Modelos de operação, personas e heurísticas
+├── adapters/                # Otimizações para Claude Code, Codex e Antigravity
+├── templates/               # Modelos e schemas de relatórios de auditoria
+└── references/              # Os 21 guias de referência especializados
 ```
-
----
-
-## Como Usar
-
-Para fazer uma revisão de UX a um ecrã, funcionalidade ou app:
-
-```text
-Review the onboarding flow in my app.
-```
-ou
-```text
-/ux-review [ecrã, fluxo ou componente]
-```
-
-O router `ux-review` selecionará automaticamente as skills mais relevantes (limitadas a no máximo 5 para máxima eficiência de contexto) e devolverá o relatório estruturado com:
-1. **Summary** (Qualidade geral, maior risco, maior força)
-2. **Findings** (com `Item`, `Verdict`, `Evidence`, `Severity` e `Confidence`)
-3. **Top fixes** (3 a 5 correções concretas e ordenadas por impacto)
 
 ---
 
 ## Licença
 
-MIT — veja [LICENSE](LICENSE).
+Distribuído sob a licença [MIT](LICENSE).

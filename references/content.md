@@ -1,9 +1,3 @@
----
-name: ux-content
-description: Content strategy and UX writing — plain language, microcopy, button and label writing, read/unread states, localization and RTL, and content freshness. Use when writing or reviewing any in-product copy: buttons, labels, error messages, empty states, tooltips, onboarding, AI-generated content labels.
-allowed-tools: Read, Glob, Grep
----
-
 # Content and UX Writing
 
 Every word in the UI is a design decision. Good writing reduces friction, builds trust, and guides users to the next step. It carries the same weight as visual design.
@@ -18,7 +12,7 @@ Every word in the UI is a design decision. Good writing reduces friction, builds
 | Read / unread state | Bold title or colored dot. Not color alone. |
 | Localization quality | Reviewed by native speakers. Machine translation alone is insufficient. |
 | Content freshness | Outdated content flagged, archived, or removed on a defined threshold. |
-| AI-generated content labeled | Consistent badge (sparkle icon widely recognized). Not buried in metadata. See `../ux-ai-automation`. |
+| AI-generated content labeled | Consistent badge (sparkle icon widely recognized). Not buried in metadata. See `./.md`. |
 
 ## Writing principles
 
@@ -46,7 +40,7 @@ Every word in the UI is a design decision. Good writing reduces friction, builds
 | Error | What happened + how to fix |
 | Success | Confirm action + suggest next step |
 | Loading | What is loading: "Uploading photo…" |
-| Empty state headline | Empathetic, forward-looking (anatomy in `../ux-error-handling`) |
+| Empty state headline | Empathetic, forward-looking (anatomy in `./.md`) |
 
 ## Localization notes
 
@@ -64,8 +58,7 @@ Every word in the UI is a design decision. Good writing reduces friction, builds
 
 ## Related
 
-- `../ux-error-handling` — error message formula and empty-state anatomy.
-- `../ux-forms` — labels, placeholders, validation copy.
-- `../ux-accessibility` — plain language as an a11y requirement.
-- `../ux-ai-automation` — AI content labeling and disclosure copy.
-
+- `./.md` — error message formula and empty-state anatomy.
+- `./.md` — labels, placeholders, validation copy.
+- `./.md` — plain language as an a11y requirement.
+- `./.md` — AI content labeling and disclosure copy.

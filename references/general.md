@@ -1,9 +1,3 @@
----
-name: ux-general
-description: Overall app quality and store readiness — name and icon, splash screen and cold start, force update, cloud sync and conflict resolution, backup and restore, dark-mode and OS-language sync, orientation and multitasking, in-app operation status, widgets, ratings prompt, and versioning. Each item carries a Required / Recommended / Optional priority; only Required items are launch blockers. Use when reviewing app health, preparing store submission, or auditing cross-platform parity.
-allowed-tools: Read, Glob, Grep
----
-
 # General App Quality
 
 The fundamentals every app needs regardless of domain. Reviewers, users, and store guidelines all expect them.
@@ -68,9 +62,8 @@ Priorities in the checklist:
 
 ## Related
 
-- `../ux-settings` — in-app language, cache clearing, preferences.
-- `../ux-navigation` — deep links, back stack, hierarchy.
-- `../ux-notifications` — push permission and content quality.
-- `../ux-review` — the router for a full multi-category audit.
+- `./.md` — in-app language, cache clearing, preferences.
+- `./.md` — deep links, back stack, hierarchy.
+- `./.md` — push permission and content quality.
+- `./.md` — the router for a full multi-category audit.
 - `../agent/platform-adaptation.md` — cross-platform baselines (iOS 44pt, Android 48dp, Web Core Web Vitals).
-

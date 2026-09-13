@@ -1,14 +1,8 @@
----
-name: ux-consent-and-autonomy
-description: Consent, autonomy and reversibility for AGENT-taken actions — plan previews, per-action consent, confirmation-weight ladder, dry-run and diff, undo and rollback, revocable scopes and time-boxed autonomy, autonomy-tier escalation and revocation, cost and side-effect disclosure. Use when the product (or a feature inside it) takes actions on the user's behalf that touch money, files, external systems, other people, or state that cannot be trivially undone.
-allowed-tools: Read, Glob, Grep
----
-
 # Consent and Autonomy
 
 When an agent takes actions on the user's behalf, consent stops being a one-time onboarding checkbox and becomes a per-action, per-scope, revocable contract. This skill is the canonical home for that contract.
 
-Related but different: `../ux-safety-privacy` covers consent for **data collection**; this skill covers consent for **actions**.
+Related but different: `./.md` covers consent for **data collection**; this skill covers consent for **actions**.
 
 ## Checklist
 
@@ -74,10 +68,9 @@ Settings > Autonomy shows: every capability the agent has, its current tier, its
 
 ## Related
 
-- `../ux-ai-agent` — the broader UX of products that are agents.
-- `../ux-safety-privacy` — data-collection consent (distinct from action consent).
-- `../ux-error-handling` — undo mechanics, failure-state screens.
-- `../ux-settings` — where the autonomy panel lives.
+- `./.md` — the broader UX of products that are agents.
+- `./.md` — data-collection consent (distinct from action consent).
+- `./.md` — undo mechanics, failure-state screens.
+- `./.md` — where the autonomy panel lives.
 - `../agent/human-in-the-loop.md` — the agent-side decision table for when the agent should ask.
 - `../agent/uncertainty.md` — how to surface low-confidence proposals to the user.
-

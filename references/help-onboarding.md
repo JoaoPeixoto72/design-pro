@@ -1,9 +1,3 @@
----
-name: ux-help-onboarding
-description: Onboarding and help UX — first-run flow, 10-second comprehension, loading states, skeleton screens, tooltips and coach marks, contextual help, in-app help center, permission-priming, and progressive disclosure. Use when designing or reviewing first-run experiences, feature discovery, contextual help, or loading indicators.
-allowed-tools: Read, Glob, Grep
----
-
 # Help and Onboarding
 
 Onboarding sets the trajectory of the user's entire relationship with the app. Great first-runs convert. Confusing ones churn. Once users are in, good help systems make them feel confident.
@@ -20,7 +14,7 @@ Onboarding sets the trajectory of the user's entire relationship with the app. G
 | Contextual tooltip | On first visit to a complex screen. One concept only. Dismissible. |
 | In-app help center | Searchable help inside the app. No forced redirect to a marketing site. |
 | Permission priming | Pre-permission screen explains the ask before the system dialog. |
-| Blank-slate invites the first action | Empty states invite (see `../ux-error-handling`). |
+| Blank-slate invites the first action | Empty states invite (see `./.md`). |
 
 ## Loading state guidelines
 
@@ -64,9 +58,8 @@ Onboarding sets the trajectory of the user's entire relationship with the app. G
 
 ## Related
 
-- `../ux-content` — onboarding copy and tooltip writing.
-- `../ux-error-handling` — canonical empty-state anatomy.
-- `../ux-safety-privacy` — permission prompt timing.
-- `../ux-notifications` — when to ask for notification permission.
-- `../ux-multimodal-input` — first-run guidance for camera / voice permissions.
-
+- `./.md` — onboarding copy and tooltip writing.
+- `./.md` — canonical empty-state anatomy.
+- `./.md` — permission prompt timing.
+- `./.md` — when to ask for notification permission.
+- `./.md` — first-run guidance for camera / voice permissions.

@@ -1,9 +1,3 @@
----
-name: ux-ai-agent
-description: UX of products that ARE agents — apps whose main surface is an autonomous or semi-autonomous AI acting on the user's behalf. Covers trust, autonomy levels, confirmation and previews, reversibility and undo, execution-state visibility, partial completion, tool errors, long-running tasks, transparency budget, memory and permissions, human handoff, and multi-agent orchestration UX. Use when reviewing chat-driven agents, coding agents, agent workflows, AI copilots that take actions, or any product where the user delegates work rather than operating controls.
-allowed-tools: Read, Glob, Grep
----
-
 # UX of Agent-Driven Products
 
 This is different from `ux-ai-automation`, which covers AI features embedded in a traditional product (a "summarize" button, a smart filter, a recommendation row). This skill is for products where the AI **is** the surface — the user states an intent and the product plans, acts, and reports.
@@ -57,10 +51,9 @@ This is different from `ux-ai-automation`, which covers AI features embedded in 
 
 ## Related
 
-- `../ux-error-handling` — failure screens, undo, confirmation dialogs.
-- `../ux-safety-privacy` — permissions, consent, memory boundaries.
-- `../ux-notifications` — long-running task notifications.
+- `./.md` — failure screens, undo, confirmation dialogs.
+- `./.md` — permissions, consent, memory boundaries.
+- `./.md` — long-running task notifications.
 - `../agent/human-in-the-loop.md` — when to ask vs act.
 - `../agent/verification.md` — post-action verification the *product* should do before claiming success.
 - `../agent/uncertainty.md` — how the agent should behave when confidence is low (say less, offer options).
-

@@ -1,9 +1,3 @@
----
-name: ux-safety-privacy
-description: Safety and privacy UX — biometric authentication, passkeys (FIDO2), permission prompts and priming, 2FA (TOTP / SMS fallback / magic links), GDPR compliance (data export, erasure, portability, consent), data protection, multi-device management, and privacy-by-default. Use when designing or auditing authentication, data handling, permissions, or any security-sensitive flow.
-allowed-tools: Read, Glob, Grep
----
-
 # Safety and Privacy
 
 Privacy is a right. Security is a promise. Both must be designed explicitly — users should not have to choose between convenience and protection.
@@ -61,9 +55,8 @@ Privacy is a right. Security is a promise. Both must be designed explicitly — 
 
 ## Related
 
-- `../ux-user-account` — login, session, account deletion.
-- `../ux-notifications` — permission timing and per-type granularity.
-- `../ux-settings` — where privacy controls live.
-- `../ux-accessibility` — accessible authentication (WCAG 3.3.8).
-- `../ux-consent-and-autonomy` — consent flows when an *agent* takes actions on the user's behalf.
-
+- `./.md` — login, session, account deletion.
+- `./.md` — permission timing and per-type granularity.
+- `./.md` — where privacy controls live.
+- `./.md` — accessible authentication (WCAG 3.3.8).
+- `./.md` — consent flows when an *agent* takes actions on the user's behalf.

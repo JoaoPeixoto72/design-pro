@@ -1,6 +1,6 @@
 # Visual Inspection
 
-How to read screenshots and running UIs for a review. Referenced from category skills that judge visual output (`ux-visual-design`, `ux-accessibility`, `ux-navigation`, `ux-content`, `ux-ai-agent`).
+How to read screenshots and running UIs for a review. Referenced from category skills that judge visual output (`references/visual-design.md`, `references/accessibility.md`, `references/navigation.md`, `references/content.md`, `references/ai-agent.md`).
 
 ## Before you look
 

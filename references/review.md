@@ -1,9 +1,3 @@
----
-name: ux-review
-description: Entry point for UX reviews, design audits and product feedback on mobile apps (iOS, Android) and web. Routes to the category skills that apply to the scope, defines the shared output contract (Summary, Findings with Confidence, Top fixes), and enforces the review's stopping rules. Use when asked to review a screen, flow, feature, or entire app.
-allowed-tools: Read, Glob, Grep
----
-
 # UX Review — Router
 
 You are running a **single-pass UX review**. You will pick the right category skills, apply them once, and produce the shared report. You will NOT loop, re-verify, or expand scope.
@@ -77,4 +71,3 @@ Use `../templates/review-report.md.tmpl`. The structure:
 - `../agent/task-decomposition.md` — how to run a whole-app review as focused groups.
 - `../agent/implementation-loop.md` — when a review turns into implementation.
 - `../agent/uncertainty.md` — when to stop and ask, when to produce a partial review.
-

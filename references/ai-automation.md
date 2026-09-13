@@ -1,14 +1,8 @@
----
-name: ux-ai-automation
-description: UX of AI FEATURES INSIDE a traditional product — assistants and chatbots, smart recommendations, semantic and natural-language search, predictive input, auto-categorization, AI-generated summaries, AI content labeling and transparency, per-feature opt-out, feedback loops, on-device vs cloud choice. Use when designing AI features embedded in an existing product surface. For products that ARE agents (the agent IS the surface), use ux-ai-agent instead.
-allowed-tools: Read, Glob, Grep
----
-
 # AI Features Inside a Product
 
 This skill covers AI features embedded in a traditional product — the "Summarize" button, the recommendation row, the smart filter, the AI search. The product itself is not an agent; AI just augments its surfaces.
 
-For products that ARE agents (the user delegates work rather than operating controls), use `../ux-ai-agent`.
+For products that ARE agents (the user delegates work rather than operating controls), use `./.md`.
 
 ## Checklist
 
@@ -69,9 +63,8 @@ Where possible, close the loop: "Your suggestions have been used to improve your
 
 ## Related
 
-- `../ux-content` — labeling and disclosure copy.
-- `../ux-safety-privacy` — on-device processing and data handling.
-- `../ux-search` — AI-powered search within the broader search experience.
-- `../ux-ai-agent` — the sibling skill for products that ARE agents.
-- `../ux-consent-and-autonomy` — when an AI feature can act on the user's behalf.
-
+- `./.md` — labeling and disclosure copy.
+- `./.md` — on-device processing and data handling.
+- `./.md` — AI-powered search within the broader search experience.
+- `./.md` — the sibling skill for products that ARE agents.
+- `./.md` — when an AI feature can act on the user's behalf.

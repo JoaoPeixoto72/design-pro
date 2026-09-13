@@ -1,9 +1,3 @@
----
-name: ux-search
-description: In-app search UX — discoverability, autocomplete, recent and trending queries, filters, sort, no-results states, voice search, typo tolerance, and search scope clarity. Use when designing or reviewing a search feature, results page, or any content-discovery flow. Complements ux-ai-automation for AI/semantic search.
-allowed-tools: Read, Glob, Grep
----
-
 # Search
 
 Search is often the fastest path to content. A poor search experience is one of the most common reasons users churn from content-heavy apps.
@@ -17,8 +11,8 @@ Search is often the fastest path to content. A poor search experience is one of 
 | Suggestions | Autocomplete after 1–2 keystrokes. Debounced ~300ms. |
 | Filter and sort | Filter chips above results. Active filter count in a badge. All filters clearable in one tap. |
 | Search scope indicator | UI shows what is being searched (e.g. "Searching in Orders"). |
-| Empty-results state | "No results for X" with spelling suggestion and related categories. Empty-state anatomy in `../ux-error-handling`. |
-| Voice search | Microphone icon in the bar (see `../ux-multimodal-input`). |
+| Empty-results state | "No results for X" with spelling suggestion and related categories. Empty-state anatomy in `./.md`. |
+| Voice search | Microphone icon in the bar (see `./.md`). |
 | Typo tolerance | Fuzzy matching handles common misspellings. |
 | Blank-state suggestions | With empty bar, show trending or personalized suggestions. |
 
@@ -37,8 +31,7 @@ Search is often the fastest path to content. A poor search experience is one of 
 
 ## Related
 
-- `../ux-information-architecture` — labels and categorization that make search findable.
-- `../ux-error-handling` — empty-state standards.
-- `../ux-ai-automation` — semantic search and natural-language queries.
-- `../ux-multimodal-input` — voice and image search input.
-
+- `./.md` — labels and categorization that make search findable.
+- `./.md` — empty-state standards.
+- `./.md` — semantic search and natural-language queries.
+- `./.md` — voice and image search input.

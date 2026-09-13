@@ -1,9 +1,3 @@
----
-name: ux-navigation
-description: Navigation UX for mobile and web — tab bars, back button behavior, deep links, gesture navigation, modal vs push, scroll behavior, and the 3-tap rule. Use when designing or auditing app structure surfacing, screen hierarchy, or the routes users take through a product. Complements ux-information-architecture (the structure itself).
-allowed-tools: Read, Glob, Grep
----
-
 # Navigation
 
 Navigation is the app's skeleton. When it is invisible and predictable, users feel in control. When it is broken, they leave.
@@ -41,8 +35,7 @@ Navigation is the app's skeleton. When it is invisible and predictable, users fe
 
 ## Related
 
-- `../ux-information-architecture` — the structure this navigation surfaces.
-- `../ux-notifications` — deep links notifications land on.
-- `../ux-general` — cross-platform navigation parity.
+- `./.md` — the structure this navigation surfaces.
+- `./.md` — deep links notifications land on.
+- `./.md` — cross-platform navigation parity.
 - `../agent/platform-adaptation.md` — iOS vs Android vs Web navigation baselines and back-gesture rules.
-

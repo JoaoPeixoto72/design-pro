@@ -13,17 +13,17 @@ When two skills disagree about the same item:
 
 ## Deduplication
 
-If two skills would produce the same finding (e.g., `ux-accessibility` and `ux-visual-design` both flag low contrast), file it once, under the more specific skill. Reference from the other row.
+If two skills would produce the same finding (e.g., `references/accessibility.md` and `references/visual-design.md` both flag low contrast), file it once, under the more specific skill. Reference from the other row.
 
 ## Cross-references (canonical homes)
 
-- **Empty-state standards** — `ux-error-handling`. All other skills reference it.
-- **Notification granularity** — `ux-notifications`. `ux-settings` references it.
-- **In-app language and clear cache** — `ux-settings`. Not `ux-general`.
-- **10-second comprehension** — `ux-help-onboarding`. Not `ux-user-account`.
+- **Empty-state standards** — `references/error-handling.md`. All other skills reference it.
+- **Notification granularity** — `references/notifications.md`. `references/settings.md` references it.
+- **In-app language and clear cache** — `references/settings.md`. Not `references/general.md`.
+- **10-second comprehension** — `references/help-onboarding.md`. Not `references/user-account.md`.
 - **WCAG 2.2 rule text** — `ux-accessibility/references/wcag-2.2.md`. All other skills cite by rule number.
 
 ## Anti-patterns
 
 - Restating the same finding under three skills to "raise its priority". Severity is the priority signal.
-- Loading two skills that clearly cover the same ground (e.g., `ux-forms` + `ux-content` for a review that is really about validation copy — pick one).
+- Loading two skills that clearly cover the same ground (e.g., `references/forms.md` + `references/content.md` for a review that is really about validation copy — pick one).

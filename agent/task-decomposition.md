@@ -24,4 +24,4 @@ Whole-app reviews are the failure case for one-shot reviews. Decompose them.
 
 ## Anti-pattern
 
-The "mega review" — one report with 200 rows across every category, no ranking, no scope. This is what V2's `ux-review` risked producing on 5.x models because they follow "apply each checklist" literally. V3 prevents it by capping selection and by requiring per-group runs on `app` scope.
+The "mega review" — one report with 200 rows across every category, no ranking, no scope. This is what V2's `references/review.md` risked producing on 5.x models because they follow "apply each checklist" literally. V3 prevents it by capping selection and by requiring per-group runs on `app` scope.

@@ -1,9 +1,3 @@
----
-name: ux-notifications
-description: Notification UX — push permission timing and pre-permission priming, per-type granularity, transactional vs promotional separation, quiet hours and OS Focus/DND, badge accuracy, deep-link targets, notification content quality, grouping, Android channels, iOS provisional authorization, and frequency capping. Use when designing or reviewing push notifications, notification settings, or any messaging that interrupts the user.
-allowed-tools: Read, Glob, Grep
----
-
 # Notifications
 
 A notification interrupts someone's life. Every one you send spends trust. The OS-level "turn off all notifications" switch is one long-press away and rarely comes back once flipped.
@@ -50,9 +44,8 @@ A notification interrupts someone's life. Every one you send spends trust. The O
 
 ## Related
 
-- `../ux-settings` — where notification controls live.
-- `../ux-safety-privacy` — permission prompt best practices.
-- `../ux-navigation` — deep-link targets.
-- `../ux-content` — notification copy quality.
-- `../ux-ai-agent` — long-running-task notifications for agent products.
-
+- `./.md` — where notification controls live.
+- `./.md` — permission prompt best practices.
+- `./.md` — deep-link targets.
+- `./.md` — notification copy quality.
+- `./.md` — long-running-task notifications for agent products.

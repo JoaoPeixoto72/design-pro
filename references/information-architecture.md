@@ -1,9 +1,3 @@
----
-name: ux-information-architecture
-description: Information architecture — content categorization, labeling, screen titles, sort and filter, settings structure, data hierarchy, F-pattern layout, and minimizing cognitive load. Use when designing app structure, sitemaps, or improving how information is grouped and labeled. Complements ux-navigation (the structure's surfacing).
-allowed-tools: Read, Glob, Grep
----
-
 # Information Architecture
 
 IA is the practice of organizing, structuring, and labeling content so users find what they need. Poor IA is the invisible reason users say "I just couldn't find it."
@@ -19,7 +13,7 @@ IA is the practice of organizing, structuring, and labeling content so users fin
 | Filter and sort discoverable | Above results. Active filter count shown. |
 | Minimal scrolling for critical info | Key content above the fold. Details load progressively. |
 | Timestamp visibility | Relative time near the event, full timestamp on tap or hover. |
-| Settings organized by theme | Account / Notifications / Privacy / Appearance / About. Full tree in `../ux-settings`. |
+| Settings organized by theme | Account / Notifications / Privacy / Appearance / About. Full tree in `./.md`. |
 | F-pattern / Z-pattern respected | Most important content top-left of each screen. |
 | Short checkout | Purchase flow ≤ 5 steps. Guest checkout available. |
 | Consistent labels | One word per concept — "Saved" is not "Bookmarks" elsewhere. |
@@ -42,7 +36,6 @@ Use the user's words, not internal terminology. Avoid jargon and acronyms for fi
 
 ## Related
 
-- `../ux-navigation` — how the structure is exposed.
-- `../ux-search` — search as a complement to browsing.
-- `../ux-content` — labeling and terminology consistency.
-
+- `./.md` — how the structure is exposed.
+- `./.md` — search as a complement to browsing.
+- `./.md` — labeling and terminology consistency.

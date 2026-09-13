@@ -1,9 +1,3 @@
----
-name: ux-error-handling
-description: Error handling UX — destructive-action confirmation, undo patterns, empty states, error message writing, crash recovery, and server-error handling. This is the CANONICAL home for empty-state standards and the error-message formula — other skills cite here. Use when designing or reviewing failure paths, confirmation dialogs, undo flows, or any screen that handles absence or breakage.
-allowed-tools: Read, Glob, Grep
----
-
 # Error Handling
 
 Every error is a broken promise. How you handle it decides whether the user forgives or leaves. Good error handling is preventive, informative, and always leaves a path forward.
@@ -21,7 +15,7 @@ Every error is a broken promise. How you handle it decides whether the user forg
 | Server errors | 5xx / timeout show human message + Retry. Never a raw stack trace. |
 | Auth error | Redirect to login preserving the intended destination. |
 | Permission denied | Explain and link to Settings. |
-| Network error | Top banner + offline fallback (see `../ux-network`). |
+| Network error | Top banner + offline fallback (see `./.md`). |
 
 ## Error-message formula
 
@@ -89,9 +83,8 @@ Never a dead end: every empty state offers a next step or a path back.
 
 ## Related
 
-- `../ux-content` — error tone and microcopy.
-- `../ux-network` — connectivity-specific errors.
-- `../ux-forms` — inline validation.
-- `../ux-ai-agent` — failure state for products that are agents.
-- `../ux-consent-and-autonomy` — undo and reversibility rules for agent-taken actions.
-
+- `./.md` — error tone and microcopy.
+- `./.md` — connectivity-specific errors.
+- `./.md` — inline validation.
+- `./.md` — failure state for products that are agents.
+- `./.md` — undo and reversibility rules for agent-taken actions.

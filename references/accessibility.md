@@ -1,9 +1,3 @@
----
-name: ux-accessibility
-description: Accessibility audit — WCAG 2.2 AA compliance, screen reader support (VoiceOver / TalkBack), contrast ratios, touch targets, focus management, reduce-motion, Dynamic Type, accessible authentication, and redundant entry. Use when auditing accessibility, implementing assistive-technology support, or shipping in the EU (European Accessibility Act since June 2025). This is the canonical WCAG home — other skills cite by rule number.
-allowed-tools: Read, Glob, Grep
----
-
 # Accessibility
 
 Accessibility is a quality floor, not a checklist. Contrast helps users in sunlight. Large hit areas help users on a moving bus. Clear labels help distracted users. Design for the edges and the center benefits too.
@@ -52,8 +46,7 @@ Contrast ratios estimated from a JPEG must be marked `Inferred` (see `../agent/e
 
 ## Related
 
-- `../ux-visual-design` — the design system that shapes contrast and hit areas.
-- `../ux-forms` — accessible validation, autofill, redundant entry.
-- `../ux-content` — plain language as an accessibility requirement.
+- `./.md` — the design system that shapes contrast and hit areas.
+- `./.md` — accessible validation, autofill, redundant entry.
+- `./.md` — plain language as an accessibility requirement.
 - `../agent/visual-inspection.md` — measurement caveats when only screenshots are available.
-

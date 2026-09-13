@@ -1,9 +1,3 @@
----
-name: ux-network
-description: Network and connectivity UX — offline mode, slow-connection resilience, connection error states, background sync, cache strategy (stale-while-revalidate, cache-first, network-first), Core Web Vitals on web, mobile-app performance targets, and graceful degradation. Use when designing or reviewing how an app behaves under poor or absent network conditions.
-allowed-tools: Read, Glob, Grep
----
-
 # Network and Connectivity
 
 Network conditions are unpredictable. An app that only works on fast Wi-Fi is not a reliable product. Design for the worst connection and fast connections take care of themselves.
@@ -67,8 +61,7 @@ Network conditions are unpredictable. An app that only works on fast Wi-Fi is no
 
 ## Related
 
-- `../ux-error-handling` — error message writing and retry patterns.
-- `../ux-help-onboarding` — loading indicators and skeleton screens.
-- `../ux-ai-agent` — long-running tasks that survive a page reload.
+- `./.md` — error message writing and retry patterns.
+- `./.md` — loading indicators and skeleton screens.
+- `./.md` — long-running tasks that survive a page reload.
 - `../agent/tool-strategy.md` — running the accessibility / performance tool to verify a network claim.
-
