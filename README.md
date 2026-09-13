@@ -8,17 +8,25 @@ Conforme a especificação aberta [Agent Skills](https://agentskills.io), o **de
 
 ## Porque a Arquitetura Unificada?
 
-Anteriormente, distribuir 21 pastas soltas causava três grandes problemas:
-1. **Prompt Bloat**: 21 descrições no menu de ferramentas consumiam milhares de tokens em todas as mensagens.
-2. **Hesitação de Roteamento**: O agente hesitava sobre qual mini-skill carregar ao auditar um ecrã ou fluxo complexo.
-3. **Fricção de Instalação**: Exigia copiar 21 pastas separadas ou manter dezenas de symlinks frágeis no sistema.
+Distribuir 21 pastas soltas custava duas coisas:
 
-Com a arquitetura unificada:
-- **1 Única Pasta**: `.agents/skills/design-pro/`
-- **1 Único Ponto de Entrada**: `SKILL.md` (Lead UX Designer & Router)
-- **Carregamento Cirúrgico**: O agente consulta apenas o guia relevante em `references/` quando necessário.
-- **Rede Canónica Preservada**: 93 referências cruzadas entre disciplinas preservadas e resolvidas de forma consistente.
-- **Instalação Atómica**: 1 comando `git clone`, sem script nenhum a manter.
+1. **Fricção de instalação.** Copiar 21 pastas, ou manter 21 symlinks. Renomear uma disciplina obrigava a reinstalar. Hoje é um `git clone`, e um `git pull` actualiza.
+2. **Encaminhamento por concurso.** Com 21 skills, quem decide qual carregar são 21 `description` a competir pelo mesmo pedido, cada uma escrita sem ver as outras. Uma tabela única, onde as 21 alternativas estão lado a lado, decide com o contexto todo à vista — e diz explicitamente qual é o guia secundário.
+
+E o que ganha: **1 pasta**, **1 ponto de entrada**, carregamento a pedido de 1–2 guias, e as **93 referências cruzadas** entre disciplinas intactas.
+
+### O que esta arquitetura NÃO poupa
+
+Tokens. Vale a pena dizê-lo, porque é fácil assumir o contrário.
+
+| | parado | uma revisão com 2 guias |
+|---|---|---|
+| Skill única (esta) | ~90 tokens | ~90 + ~2500 (`SKILL.md`) + ~1700 (2 guias) = **~4300** |
+| 21 skills soltas | ~1300 tokens | ~1300 + ~1700 = **~3000** |
+
+Com 21 skills, as `description` **são** o router: o agente encaminha a partir do que o harness já lhe mostra, sem ler nada. Aqui, o `SKILL.md` tem de ser carregado inteiro antes de se saber que guia interessa. Um router que se lê é estruturalmente mais caro do que descrições que já estão à vista.
+
+Ou seja: poupa enquanto não se usa, e gasta mais assim que se usa. A troca aceita-se pelos dois pontos acima, não por contagem de tokens. *(Estimativas por caracteres, não por tokenizador — a ordem de grandeza aguenta-se, os valores exactos não.)*
 
 ---
 

@@ -1,5 +1,27 @@
 # Changelog
 
+## v4.0.2 — 2026-09-13
+
+Auditoria à substância, não à coerência: verificar se o que a skill determina está certo, e não se bate com o que ela própria diz.
+
+### A regra dos 3 toques saiu
+`navigation.md` tinha «≤3 taps to primary content» como linha Pass/Fail e o `SKILL.md` listava-a como *Key Standard*. Não é norma: o antepassado na web — a regra dos 3 cliques — foi refutado pelo estudo de cliques da UIE (620 tarefas, nenhuma relação entre número de cliques e sucesso ou satisfação). O que faz desistir é a desorientação, não a profundidade. Como estava, o auditor marcava Fail a uma navegação de 4 toques que funciona.
+
+### Norma e convenção deixam de se confundir
+Das 104 linhas de checklist com número, só 16 citam norma. As outras 88 — `400ms`, `40%`, `2s`, `~40` caracteres — são omissões defensáveis, não violações, e estavam no mesmo formato de tabela que os critérios WCAG. O Princípio 2 ganha a distinção: norma leva nome e a severidade que a evidência aguentar; número nu leva `Minor` no máximo e não se cita como norma.
+
+### Deduplicação
+O «bottom 40%» do polegar estava escrito no `accessibility.md` e no `user-account.md`, contra a regra do próprio `cross-skill-orchestration.md`. Fica na casa que tem coluna de critério.
+
+### `SKILL.md` mais leve: 2995 → 2491 tokens estimados
+- Cai a coluna *Key Standard* da tabela de encaminhamento: não ajudava a escolher guia, pré-visualizava conteúdo que o agente ia carregar a seguir.
+- O formato longo do finding e a escala de severidade passam para `templates/review-report.md.tmpl`, que só é lido na hora de escrever o relatório. Divulgação progressiva a sério.
+- Os 7 pilares passam a tabela em vez de lista com caminhos completos.
+- A tabela de encaminhamento **não** foi cortada: os parênteses com exemplos são o sinal contra o qual o modelo faz a correspondência.
+
+### O README deixa de alegar o que não é verdade
+A justificação dizia «Prompt Bloat: 21 descrições consumiam milhares de tokens». Eram ~1300, e o `SKILL.md` que as substituiu custa ~2500 — carregado inteiro antes de se saber que guia interessa, enquanto com 21 skills as `description` **são** o router e não se lê nada para encaminhar. A arquitetura poupa parada e gasta em uso. Fica escrito, com a tabela das contas: justifica-se pela instalação e pela coerência do encaminhamento, não por tokens.
+
 ## v4.0.1 — 2026-09-13
 
 Limpeza do que a transição para `design-pro` deixou por arrumar.
