@@ -1,6 +1,6 @@
 # Adapter — Codex CLI (GPT-5.6 Sol / Terra / Luna)
 
-Rules Codex CLI needs on top of the shared skills.
+Rules Codex CLI needs on top of the shared guides.
 
 ## Loading
 
@@ -13,7 +13,7 @@ Rules Codex CLI needs on top of the shared skills.
 GPT-5.6 Sol:
 
 - Follows instructions literally, in the same family style as Claude 5.x. Do not include "be exhaustive" or "double-check" — will burn tokens without helping.
-- Reasoning effort: `low` / `medium` / `high` / `max`. `ultra` mode spawns subagents; treat it like Opus 5 delegation and keep the 5-skill routing cap.
+- Reasoning effort: `low` / `medium` / `high` / `max`. `ultra` mode spawns subagents; treat it like Opus 5 delegation and keep the load cap in `SKILL.md`.
 - Prompt cache: use explicit cache breakpoints for the shared `agent/*.md` files if the harness supports them (30-minute min cache lifetime).
 
 ## Model tier routing for reviews

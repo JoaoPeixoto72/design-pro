@@ -1,6 +1,6 @@
 # Adapter — Google Antigravity (Gemini 3.8 Flash)
 
-Rules Antigravity needs on top of the shared skills.
+Rules Antigravity needs on top of the shared guides.
 
 ## Loading
 
@@ -16,7 +16,7 @@ Gemini 3.8 Flash:
 - Thinking supported at `low` / `medium` / `high` — do NOT pass `minimal`.
 - Long-horizon software engineering focus: the model will happily keep iterating on implementation. The 3-iteration cap in `agent/implementation-loop.md` is critical here.
 - Computer use is in preview: prefer it for visual inspection when available, and cite screenshots by region.
-- Long context (1M in): do not confuse capacity with permission — the 5-skill routing cap still applies.
+- Long context (1M in): do not confuse capacity with permission — the load cap in `SKILL.md` still applies.
 
 ## MCP interaction
 
