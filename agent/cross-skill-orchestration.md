@@ -21,7 +21,7 @@ If two skills would produce the same finding (e.g., `references/accessibility.md
 - **Notification granularity** — `references/notifications.md`. `references/settings.md` references it.
 - **In-app language and clear cache** — `references/settings.md`. Not `references/general.md`.
 - **10-second comprehension** — `references/help-onboarding.md`. Not `references/user-account.md`.
-- **WCAG 2.2 rule text** — `ux-accessibility/references/wcag-2.2.md`. All other skills cite by rule number.
+- **WCAG 2.2 rule text** — `references/accessibility.md`. All other guides cite by rule number.
 
 ## Anti-patterns
 

@@ -10,7 +10,7 @@ When to reach for a tool during a UX review, and which one. Loaded when a skill'
 | Need to read code | Grep / read on the specific files. Do not load the whole repo. |
 | Need a token value | Design system source (theme file, tokens JSON), not a screenshot. |
 | Need to verify contrast / target size | Run the accessibility tool in the IDE. Do not estimate from JPEG. |
-| Need a WCAG citation | Reference `../core/ux-accessibility/references/wcag-2.2.md` if present, otherwise the W3C page. |
+| Need a WCAG citation | Reference `../references/accessibility.md`, otherwise the W3C page. |
 | Need to check platform behavior | Read the platform HIG / Material spec once, do not restate general knowledge. |
 | Need real user data | Ask the user. Do not fabricate. |
 

@@ -10,10 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run structural audit (skill-auditor v4 linter)
+      - name: Check out the linter
+        uses: actions/checkout@v4
+        with:
+          repository: JoaoPeixoto72/skill-auditor
+          path: .skill-auditor
+      - name: Run structural audit
+        # Aponta ao ficheiro, nao a pasta: varrer o workspace apanhava tambem
+        # o SKILL.md do proprio linter. E o dirname da' `design-pro`, que e' o
+        # que o linter compara com o campo `name:`.
         run: |
-          bash core/skill-auditor/scripts/audit.sh core | tee audit.out
-          # Fail on any Blocker/Major markers emitted by the linter.
+          bash .skill-auditor/scripts/audit.sh "$GITHUB_WORKSPACE/SKILL.md" | tee audit.out
           if grep -E "^\s*-\s*\[(Blocker|Major)\]" audit.out; then
             echo "::error::skill-auditor found Blocker/Major findings (see log above)."
             exit 1

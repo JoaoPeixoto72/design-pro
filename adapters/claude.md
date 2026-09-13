@@ -1,6 +1,6 @@
 # Adapter — Claude Code (Opus 5 / Sonnet 5 / Fable 5)
 
-Rules the Claude family needs on top of the shared skills. This file is loaded implicitly by the IDE; you do not need to reference it from `core/`.
+Rules the Claude family needs on top of the shared skills. This file is loaded implicitly by the IDE; you do not need to reference it from the guides.
 
 ## Loading
 

@@ -1,5 +1,29 @@
 # Changelog
 
+## v4.0.1 — 2026-09-13
+
+Limpeza do que a transição para `design-pro` deixou por arrumar.
+
+### Duplicados removidos
+- `templates/`: `audit-report-template.md` e `review-report.md` eram byte-a-byte iguais ao `review-report.md.tmpl`, que é o único que o `SKILL.md` cita. Fica um. Sai também o `SKILL.md.tmpl`, que era o molde para escrever *uma* skill nova — não faz sentido num repo de skill única.
+- `audit-workflow.yml` na raiz era cópia do `.github/workflows/audit.yml` a menos de um comentário. Fica o que o GitHub corre.
+
+### Instaladores removidos
+- Saem o `install.sh` e o `install.ps1`. O repositório é a skill: instalar é `git clone` para a pasta do agente que se quer, e atualizar é `git pull`. O README diz as três linhas.
+
+### Referências mortas ao layout antigo
+Depois de `core/` deixar de existir, ficaram apontadores para lá:
+- `AGENTS.md` descrevia o repo inteiro pelo layout antigo — `core/ux-*/SKILL.md`, `ux-review` como router, teto de 5 skills. Reescrito para o hub.
+- `agent/tool-strategy.md` e `agent/cross-skill-orchestration.md` citavam `ux-accessibility/references/wcag-2.2.md`, que nunca existiu neste repo → `references/accessibility.md`.
+- `agent/agent-operating-model.md`, `agent/context-management.md`, `agent/visual-inspection.md`, `adapters/claude.md` e `templates/review-report.md.tmpl` falavam de «category skills» e de `core/`.
+
+### CI reparada
+- `.github/workflows/audit.yml` corria `bash core/skill-auditor/scripts/audit.sh core` — caminho que não existe desde que o `skill-auditor` saiu para repositório próprio. Passa a buscá-lo a `JoaoPeixoto72/skill-auditor` e a apontar ao `SKILL.md`, não à pasta: varrer o workspace apanhava também o `SKILL.md` do próprio linter.
+
+### Outros
+- `description` do `SKILL.md` passada a inglês, como o resto do conteúdo da skill. É o campo que decide a ativação a partir do que o utilizador escreve.
+- Saem os `AUDIT-REPORT-*.md`: são relatórios de desenvolvimento sobre skills de outro repositório, não material que a skill use.
+
 ## v4.0.0 — 2026-09-13 (design-pro)
 
 Transição da arquitetura multi-pasta para a arquitetura unificada **Hub & References** sob o nome **design-pro**.

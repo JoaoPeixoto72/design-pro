@@ -12,7 +12,7 @@ What to keep loaded, what to summarize, what to drop.
 
 ## Summarize
 
-- The category skills' bodies, after their checklist has been applied — keep only the item names.
+- The reference guides' bodies, after their checklist has been applied — keep only the item names.
 - The evidence protocol and visual inspection files, after use — keep only the confidence values you produced.
 
 ## Drop

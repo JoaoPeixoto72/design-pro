@@ -1,6 +1,6 @@
 ---
 name: design-pro
-description: Audita, desenha e revê a experiência de utilizador (UX/UI), acessibilidade (WCAG 2.2 AA), fluxos de onboarding, formulários, hierarquia visual e design systems em aplicações web e móveis. Use para auditar componentes, fluxos de utilizador ou conduzir revisões holísticas de produto. NÃO usar para auditorias de código backend ou segurança de infraestrutura — use production-audit.
+description: Audits, designs and reviews user experience (UX/UI), accessibility (WCAG 2.2 AA), onboarding flows, forms, visual hierarchy and design systems in web and mobile applications. Use to audit a component, a user flow, or to run a holistic product review. Do NOT use for backend code audits or infrastructure security — use production-audit.
 argument-hint: "[screen | flow | app | checklist]"
 model: generic
 effort: standard

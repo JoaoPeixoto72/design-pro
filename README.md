@@ -18,22 +18,24 @@ Com a arquitetura unificada:
 - **1 Único Ponto de Entrada**: `SKILL.md` (Lead UX Designer & Router)
 - **Carregamento Cirúrgico**: O agente consulta apenas o guia relevante em `references/` quando necessário.
 - **Rede Canónica Preservada**: 93 referências cruzadas entre disciplinas preservadas e resolvidas de forma consistente.
-- **Instalação Atómica**: 1 comando `git clone` ou script de instalação idempotente.
+- **Instalação Atómica**: 1 comando `git clone`, sem script nenhum a manter.
 
 ---
 
 ## Como Instalar
 
-### Opção A: Linha de Comandos Direta (Recomendado)
-
-**No Google Antigravity:**
-```bash
-git clone https://github.com/JoaoPeixoto72/design-pro.git .agents/skills/design-pro
-```
+Não há script de instalação, e não é preciso: com a arquitetura unificada o
+repositório **é** a skill. Instalar é cloná-lo para a pasta que o agente lê, e
+atualizar é um `git pull` lá dentro. Escolha só o agente que quer.
 
 **No Claude Code:**
 ```bash
 git clone https://github.com/JoaoPeixoto72/design-pro.git .claude/skills/design-pro
+```
+
+**No Google Antigravity:**
+```bash
+git clone https://github.com/JoaoPeixoto72/design-pro.git .agents/skills/design-pro
 ```
 
 **No Codex CLI / Cursor:**
@@ -41,27 +43,9 @@ git clone https://github.com/JoaoPeixoto72/design-pro.git .claude/skills/design-
 git clone https://github.com/JoaoPeixoto72/design-pro.git .codex/skills/design-pro
 ```
 
-### Opção B: Scripts de Instalação Automatizados
-
-Se preferir instalar globalmente para todos os agentes ou associar via link simbólico:
-
-**No Linux / macOS / WSL:**
-```bash
-# Instalação global para Claude Code, Antigravity e Codex
-./install.sh
-
-# Ou num projeto específico:
-./install.sh --project /caminho/para/o/projeto
-```
-
-**No Windows (PowerShell):**
-```powershell
-# Instalação global
-.\install.ps1
-
-# Ou num projeto específico:
-.\install.ps1 -Project "C:\caminho\para\o\projeto"
-```
+Para instalar globalmente em vez de num projeto, troque o caminho pelo do seu
+diretório pessoal — `~/.claude/skills/design-pro`, `~/.gemini/config/skills/design-pro`
+ou `~/.codex/skills/design-pro`.
 
 ---
 
@@ -125,12 +109,10 @@ design-pro/
 ├── CHANGELOG.md             # Histórico de versões e alterações
 ├── AGENTS.md                # Modelo operacional multi-agente
 ├── LICENSE                  # Licença MIT
-├── install.sh               # Script de instalação Bash
-├── install.ps1              # Script de instalação PowerShell
-├── audit-workflow.yml       # Especificação do workflow de auditoria
+├── .github/workflows/       # CI: corre o linter do skill-auditor em cada push
 ├── agent/                   # Modelos de operação, personas e heurísticas
 ├── adapters/                # Otimizações para Claude Code, Codex e Antigravity
-├── templates/               # Modelos e schemas de relatórios de auditoria
+├── templates/               # Modelo de relatório de revisão
 └── references/              # Os 21 guias de referência especializados
 ```
 

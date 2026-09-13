@@ -1,6 +1,6 @@
 # Agent Operating Model
 
-How the agent should approach a UX review. Loaded by category skills via reference, not repeated inside each skill.
+How the agent should approach a UX review. Loaded from the reference guides by pointer, not repeated inside each guide.
 
 ## The five stances
 
@@ -14,7 +14,7 @@ How the agent should approach a UX review. Loaded by category skills via referen
 
 ```
 Scope   → identify (screen | flow | feature | app).
-Skills  → route via ux-review, max 5.
+Guides  → route via the SKILL.md routing table, max 2.
 Evidence→ gather per agent/evidence-protocol.md. If visual, per agent/visual-inspection.md.
 Apply   → run each skill's checklist ONCE.
 Report  → templates/review-report.md.tmpl.
