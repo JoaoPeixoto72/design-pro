@@ -58,7 +58,7 @@ Use `../templates/review-report.md.tmpl`. The structure:
 
 ## Stopping rules
 
-- One pass. Do not verify findings you already produced.
+- One pass. Do not re-run the checklist or rewrite findings after the report is written. Targeted checks of a single claim follow `../agent/verification.md`.
 - Do not narrate your reasoning to the user.
 - Do not add sections beyond the four above unless the user asked.
 - If the user asked for brevity, cap the summary at 2 sentences and top fixes at 3. Do NOT rely on the effort setting to shorten output.
