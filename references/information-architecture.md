@@ -13,7 +13,7 @@ IA is the practice of organizing, structuring, and labeling content so users fin
 | Filter and sort discoverable | Above results. Active filter count shown. |
 | Minimal scrolling for critical info | Key content above the fold. Details load progressively. |
 | Timestamp visibility | Relative time near the event, full timestamp on tap or hover. |
-| Settings organized by theme | Account / Notifications / Privacy / Appearance / About. Full tree in `./.md`. |
+| Settings organized by theme | Account / Notifications / Privacy / Appearance / About. Full tree in `./settings.md`. |
 | F-pattern / Z-pattern respected | Most important content top-left of each screen. |
 | Short checkout | Purchase flow ≤ 5 steps. Guest checkout available. |
 | Consistent labels | One word per concept — "Saved" is not "Bookmarks" elsewhere. |
@@ -36,6 +36,6 @@ Use the user's words, not internal terminology. Avoid jargon and acronyms for fi
 
 ## Related
 
-- `./.md` — how the structure is exposed.
-- `./.md` — search as a complement to browsing.
-- `./.md` — labeling and terminology consistency.
+- `./navigation.md` — how the structure is exposed.
+- `./search.md` — search as a complement to browsing.
+- `./content.md` — labeling and terminology consistency.

@@ -1,0 +1,19 @@
+name: audit
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run structural audit (skill-auditor v4 linter)
+        run: |
+          bash core/skill-auditor/scripts/audit.sh core | tee audit.out
+          if grep -E "^\s*-\s*\[(Blocker|Major)\]" audit.out; then
+            echo "::error::skill-auditor found Blocker/Major findings (see log above)."
+            exit 1
+          fi

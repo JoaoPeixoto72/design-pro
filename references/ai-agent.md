@@ -51,9 +51,9 @@ This is different from `ux-ai-automation`, which covers AI features embedded in 
 
 ## Related
 
-- `./.md` — failure screens, undo, confirmation dialogs.
-- `./.md` — permissions, consent, memory boundaries.
-- `./.md` — long-running task notifications.
+- `./error-handling.md` — failure screens, undo, confirmation dialogs.
+- `./safety-privacy.md` — permissions, consent, memory boundaries.
+- `./notifications.md` — long-running task notifications.
 - `../agent/human-in-the-loop.md` — when to ask vs act.
 - `../agent/verification.md` — post-action verification the *product* should do before claiming success.
 - `../agent/uncertainty.md` — how the agent should behave when confidence is low (say less, offer options).

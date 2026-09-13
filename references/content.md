@@ -12,7 +12,7 @@ Every word in the UI is a design decision. Good writing reduces friction, builds
 | Read / unread state | Bold title or colored dot. Not color alone. |
 | Localization quality | Reviewed by native speakers. Machine translation alone is insufficient. |
 | Content freshness | Outdated content flagged, archived, or removed on a defined threshold. |
-| AI-generated content labeled | Consistent badge (sparkle icon widely recognized). Not buried in metadata. See `./.md`. |
+| AI-generated content labeled | Consistent badge (sparkle icon widely recognized). Not buried in metadata. See `./ai-automation.md`. |
 
 ## Writing principles
 
@@ -40,7 +40,7 @@ Every word in the UI is a design decision. Good writing reduces friction, builds
 | Error | What happened + how to fix |
 | Success | Confirm action + suggest next step |
 | Loading | What is loading: "Uploading photo…" |
-| Empty state headline | Empathetic, forward-looking (anatomy in `./.md`) |
+| Empty state headline | Empathetic, forward-looking (anatomy in `./error-handling.md`) |
 
 ## Localization notes
 
@@ -58,7 +58,7 @@ Every word in the UI is a design decision. Good writing reduces friction, builds
 
 ## Related
 
-- `./.md` — error message formula and empty-state anatomy.
-- `./.md` — labels, placeholders, validation copy.
-- `./.md` — plain language as an a11y requirement.
-- `./.md` — AI content labeling and disclosure copy.
+- `./error-handling.md` — error message formula and empty-state anatomy.
+- `./forms.md` — labels, placeholders, validation copy.
+- `./accessibility.md` — plain language as an a11y requirement.
+- `./ai-automation.md` — AI content labeling and disclosure copy.

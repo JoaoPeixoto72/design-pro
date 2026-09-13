@@ -18,7 +18,7 @@ The account experience spans first login to long-term retention. Every friction 
 | Location access | Requested only when a feature needs it, with a specific reason. |
 | Persistent session | Silent refresh tokens; never force re-login on token expiry alone. |
 | Biometric re-entry | Face ID / fingerprint for re-entry after backgrounding, not only at first login. |
-| Notification opt-in per type | See `./.md`. |
+| Notification opt-in per type | See `./notifications.md`. |
 
 ## Patterns
 
@@ -36,7 +36,7 @@ The account experience spans first login to long-term retention. Every friction 
 
 ## Related
 
-- `./.md` — biometrics, 2FA, passkeys.
-- `./.md` — input types, validation, autofill on auth forms.
-- `./.md` — account section structure.
-- `./.md` — notification opt-in timing and granularity.
+- `./safety-privacy.md` — biometrics, 2FA, passkeys.
+- `./forms.md` — input types, validation, autofill on auth forms.
+- `./settings.md` — account section structure.
+- `./notifications.md` — notification opt-in timing and granularity.

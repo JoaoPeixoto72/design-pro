@@ -35,7 +35,7 @@ Navigation is the app's skeleton. When it is invisible and predictable, users fe
 
 ## Related
 
-- `./.md` — the structure this navigation surfaces.
-- `./.md` — deep links notifications land on.
-- `./.md` — cross-platform navigation parity.
+- `./information-architecture.md` — the structure this navigation surfaces.
+- `./notifications.md` — deep links notifications land on.
+- `./general.md` — cross-platform navigation parity.
 - `../agent/platform-adaptation.md` — iOS vs Android vs Web navigation baselines and back-gesture rules.

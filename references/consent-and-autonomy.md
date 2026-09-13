@@ -2,7 +2,7 @@
 
 When an agent takes actions on the user's behalf, consent stops being a one-time onboarding checkbox and becomes a per-action, per-scope, revocable contract. This skill is the canonical home for that contract.
 
-Related but different: `./.md` covers consent for **data collection**; this skill covers consent for **actions**.
+Related but different: `./safety-privacy.md` covers consent for **data collection**; this skill covers consent for **actions**.
 
 ## Checklist
 
@@ -68,9 +68,9 @@ Settings > Autonomy shows: every capability the agent has, its current tier, its
 
 ## Related
 
-- `./.md` — the broader UX of products that are agents.
-- `./.md` — data-collection consent (distinct from action consent).
-- `./.md` — undo mechanics, failure-state screens.
-- `./.md` — where the autonomy panel lives.
+- `./ai-agent.md` — the broader UX of products that are agents.
+- `./safety-privacy.md` — data-collection consent (distinct from action consent).
+- `./error-handling.md` — undo mechanics, failure-state screens.
+- `./settings.md` — where the autonomy panel lives.
 - `../agent/human-in-the-loop.md` — the agent-side decision table for when the agent should ask.
 - `../agent/uncertainty.md` — how to surface low-confidence proposals to the user.

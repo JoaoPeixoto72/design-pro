@@ -10,7 +10,7 @@ Settings is where users go when the defaults do not fit their life. A well-desig
 | Theme switching | System (auto) / Light / Dark, three-way segmented control. |
 | Font size | Respects OS setting by default. Offers in-app override for a11y. |
 | In-app language | Change language from within Settings, independent of OS language. |
-| Per-type notification toggles | Not a single on/off. See `./.md`. |
+| Per-type notification toggles | Not a single on/off. See `./notifications.md`. |
 | Data-usage controls | Auto-download on Wi-Fi only by default. Media quality selectable. |
 | Clear cache | Cache clearable in-app with storage usage visible. |
 | No nav duplication | Settings is not a mirror of main nav. |
@@ -67,6 +67,6 @@ Settings
 
 ## Related
 
-- `./.md` — per-type controls in depth.
-- `./.md` — account section content and deletion.
-- `./.md` — version number, dark-mode sync, OS-language sync.
+- `./notifications.md` — per-type controls in depth.
+- `./user-account.md` — account section content and deletion.
+- `./general.md` — version number, dark-mode sync, OS-language sync.

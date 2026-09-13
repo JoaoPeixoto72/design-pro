@@ -44,8 +44,8 @@ A notification interrupts someone's life. Every one you send spends trust. The O
 
 ## Related
 
-- `./.md` — where notification controls live.
-- `./.md` — permission prompt best practices.
-- `./.md` — deep-link targets.
-- `./.md` — notification copy quality.
-- `./.md` — long-running-task notifications for agent products.
+- `./settings.md` — where notification controls live.
+- `./safety-privacy.md` — permission prompt best practices.
+- `./navigation.md` — deep-link targets.
+- `./content.md` — notification copy quality.
+- `./ai-agent.md` — long-running-task notifications for agent products.

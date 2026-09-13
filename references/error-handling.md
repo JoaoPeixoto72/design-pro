@@ -15,7 +15,7 @@ Every error is a broken promise. How you handle it decides whether the user forg
 | Server errors | 5xx / timeout show human message + Retry. Never a raw stack trace. |
 | Auth error | Redirect to login preserving the intended destination. |
 | Permission denied | Explain and link to Settings. |
-| Network error | Top banner + offline fallback (see `./.md`). |
+| Network error | Top banner + offline fallback (see `./network.md`). |
 
 ## Error-message formula
 
@@ -83,8 +83,8 @@ Never a dead end: every empty state offers a next step or a path back.
 
 ## Related
 
-- `./.md` — error tone and microcopy.
-- `./.md` — connectivity-specific errors.
-- `./.md` — inline validation.
-- `./.md` — failure state for products that are agents.
-- `./.md` — undo and reversibility rules for agent-taken actions.
+- `./content.md` — error tone and microcopy.
+- `./network.md` — connectivity-specific errors.
+- `./forms.md` — inline validation.
+- `./ai-agent.md` — failure state for products that are agents.
+- `./consent-and-autonomy.md` — undo and reversibility rules for agent-taken actions.

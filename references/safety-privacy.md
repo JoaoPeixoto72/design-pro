@@ -55,8 +55,8 @@ Privacy is a right. Security is a promise. Both must be designed explicitly — 
 
 ## Related
 
-- `./.md` — login, session, account deletion.
-- `./.md` — permission timing and per-type granularity.
-- `./.md` — where privacy controls live.
-- `./.md` — accessible authentication (WCAG 3.3.8).
-- `./.md` — consent flows when an *agent* takes actions on the user's behalf.
+- `./user-account.md` — login, session, account deletion.
+- `./notifications.md` — permission timing and per-type granularity.
+- `./settings.md` — where privacy controls live.
+- `./accessibility.md` — accessible authentication (WCAG 3.3.8).
+- `./consent-and-autonomy.md` — consent flows when an *agent* takes actions on the user's behalf.

@@ -14,7 +14,7 @@ Onboarding sets the trajectory of the user's entire relationship with the app. G
 | Contextual tooltip | On first visit to a complex screen. One concept only. Dismissible. |
 | In-app help center | Searchable help inside the app. No forced redirect to a marketing site. |
 | Permission priming | Pre-permission screen explains the ask before the system dialog. |
-| Blank-slate invites the first action | Empty states invite (see `./.md`). |
+| Blank-slate invites the first action | Empty states invite (see `./error-handling.md`). |
 
 ## Loading state guidelines
 
@@ -58,8 +58,8 @@ Onboarding sets the trajectory of the user's entire relationship with the app. G
 
 ## Related
 
-- `./.md` — onboarding copy and tooltip writing.
-- `./.md` — canonical empty-state anatomy.
-- `./.md` — permission prompt timing.
-- `./.md` — when to ask for notification permission.
-- `./.md` — first-run guidance for camera / voice permissions.
+- `./content.md` — onboarding copy and tooltip writing.
+- `./error-handling.md` — canonical empty-state anatomy.
+- `./safety-privacy.md` — permission prompt timing.
+- `./notifications.md` — when to ask for notification permission.
+- `./multimodal-input.md` — first-run guidance for camera / voice permissions.

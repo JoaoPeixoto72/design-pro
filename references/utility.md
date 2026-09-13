@@ -16,7 +16,7 @@ Utility features keep power users loyal. They cut repetitive work and let users 
 
 - **Share sheet.** Pre-populate a useful message, not a bare URL. Include UTM parameters where you track.
 - **Favorites architecture.** Save locally first, sync in background. Never silent failures. Fill-animation confirms save. Empty state invites the first save.
-- **Personalization.** Start with an explicit onboarding step. Refine over time with behavior. Always show "Why am I seeing this?" for recommendations (see `./.md`).
+- **Personalization.** Start with an explicit onboarding step. Refine over time with behavior. Always show "Why am I seeing this?" for recommendations (see `./ai-automation.md`).
 - **Clipboard.** iOS 16+: use `UIPasteboard.detectPatterns` to detect a URL without reading contents. Android 12+: system toast on any read — only read at the moment of use. Show a subtle non-intrusive banner: "We noticed a link — open it in [App]?" that dismisses if ignored. Never open automatically.
 
 ## Anti-patterns
@@ -28,7 +28,7 @@ Utility features keep power users loyal. They cut repetitive work and let users 
 
 ## Related
 
-- `./.md` — widgets, integrations, cross-platform parity.
-- `./.md` — clipboard and permission privacy.
-- `./.md` — personalization driven by recommendations.
-- `./.md` — camera / voice / QR as fast utility entry points.
+- `./general.md` — widgets, integrations, cross-platform parity.
+- `./safety-privacy.md` — clipboard and permission privacy.
+- `./ai-automation.md` — personalization driven by recommendations.
+- `./multimodal-input.md` — camera / voice / QR as fast utility entry points.

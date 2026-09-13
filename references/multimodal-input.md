@@ -54,10 +54,10 @@ Modern products routinely accept camera, voice, scan, image drop, or screen shar
 
 ## Related
 
-- `./.md` — permission priming, denial recovery, data-protection rules.
-- `./.md` — first-run guidance for camera / voice.
-- `./.md` — camera / voice / scan as inputs to form fields.
-- `./.md` — screenshots and voice as prompts to an agent.
-- `./.md` — voice search entry point.
-- `./.md` — fallback paths when a mode fails.
+- `./safety-privacy.md` — permission priming, denial recovery, data-protection rules.
+- `./help-onboarding.md` — first-run guidance for camera / voice.
+- `./forms.md` — camera / voice / scan as inputs to form fields.
+- `./ai-agent.md` — screenshots and voice as prompts to an agent.
+- `./search.md` — voice search entry point.
+- `./error-handling.md` — fallback paths when a mode fails.
 - `../agent/tool-strategy.md` — which tool to reach for when validating multimodal capture.

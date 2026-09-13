@@ -83,7 +83,7 @@ Use each platform's native scale, not one forced on both.
 
 ## Related
 
-- `./.md` — contrast ratios, Dynamic Type, reduce-motion (WCAG floors).
-- `./.md` — the words that fill the components.
-- `./.md` — canonical empty-state standards.
+- `./accessibility.md` — contrast ratios, Dynamic Type, reduce-motion (WCAG floors).
+- `./content.md` — the words that fill the components.
+- `./error-handling.md` — canonical empty-state standards.
 - `../agent/visual-inspection.md` — how to cite regions of a screenshot in a finding.

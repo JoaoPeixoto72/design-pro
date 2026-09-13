@@ -18,7 +18,7 @@ Forms are where intent turns into action. Every extra field, every ambiguous lab
 | Labels above fields | Visible labels, not placeholder-only. Placeholders are hints, not labels. |
 | Multi-step progress | "Step 2 of 4" indicator on multi-screen flows. User can go back. |
 | Error recovery | On failed submit: scroll to first error, keep all data, highlight the offending field. Never wipe the form. |
-| Alternative input methods | Voice / camera / QR / OCR offered where they save typing (see `./.md`). |
+| Alternative input methods | Voice / camera / QR / OCR offered where they save typing (see `./multimodal-input.md`). |
 
 ## Keyboard type reference
 
@@ -46,7 +46,7 @@ Forms are where intent turns into action. Every extra field, every ambiguous lab
 
 ## Related
 
-- `./.md` — validation error formulas, inline error patterns.
-- `./.md` — label and placeholder writing.
-- `./.md` — accessible authentication, redundant entry.
-- `./.md` — camera / voice / scan for form fields.
+- `./error-handling.md` — validation error formulas, inline error patterns.
+- `./content.md` — label and placeholder writing.
+- `./accessibility.md` — accessible authentication, redundant entry.
+- `./multimodal-input.md` — camera / voice / scan for form fields.

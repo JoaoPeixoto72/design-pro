@@ -62,8 +62,8 @@ Priorities in the checklist:
 
 ## Related
 
-- `./.md` — in-app language, cache clearing, preferences.
-- `./.md` — deep links, back stack, hierarchy.
-- `./.md` — push permission and content quality.
-- `./.md` — the router for a full multi-category audit.
+- `./settings.md` — in-app language, cache clearing, preferences.
+- `./navigation.md` — deep links, back stack, hierarchy.
+- `./notifications.md` — push permission and content quality.
+- `./review.md` — the router for a full multi-category audit.
 - `../agent/platform-adaptation.md` — cross-platform baselines (iOS 44pt, Android 48dp, Web Core Web Vitals).

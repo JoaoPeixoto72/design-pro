@@ -46,7 +46,7 @@ Contrast ratios estimated from a JPEG must be marked `Inferred` (see `../agent/e
 
 ## Related
 
-- `./.md` — the design system that shapes contrast and hit areas.
-- `./.md` — accessible validation, autofill, redundant entry.
-- `./.md` — plain language as an accessibility requirement.
+- `./visual-design.md` — the design system that shapes contrast and hit areas.
+- `./forms.md` — accessible validation, autofill, redundant entry.
+- `./content.md` — plain language as an accessibility requirement.
 - `../agent/visual-inspection.md` — measurement caveats when only screenshots are available.

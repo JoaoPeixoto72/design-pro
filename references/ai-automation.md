@@ -2,7 +2,7 @@
 
 This skill covers AI features embedded in a traditional product — the "Summarize" button, the recommendation row, the smart filter, the AI search. The product itself is not an agent; AI just augments its surfaces.
 
-For products that ARE agents (the user delegates work rather than operating controls), use `./.md`.
+For products that ARE agents (the user delegates work rather than operating controls), use `./ai-agent.md`.
 
 ## Checklist
 
@@ -63,8 +63,8 @@ Where possible, close the loop: "Your suggestions have been used to improve your
 
 ## Related
 
-- `./.md` — labeling and disclosure copy.
-- `./.md` — on-device processing and data handling.
-- `./.md` — AI-powered search within the broader search experience.
-- `./.md` — the sibling skill for products that ARE agents.
-- `./.md` — when an AI feature can act on the user's behalf.
+- `./content.md` — labeling and disclosure copy.
+- `./safety-privacy.md` — on-device processing and data handling.
+- `./search.md` — AI-powered search within the broader search experience.
+- `./ai-agent.md` — the sibling skill for products that ARE agents.
+- `./consent-and-autonomy.md` — when an AI feature can act on the user's behalf.

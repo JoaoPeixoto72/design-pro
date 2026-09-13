@@ -11,8 +11,8 @@ Search is often the fastest path to content. A poor search experience is one of 
 | Suggestions | Autocomplete after 1–2 keystrokes. Debounced ~300ms. |
 | Filter and sort | Filter chips above results. Active filter count in a badge. All filters clearable in one tap. |
 | Search scope indicator | UI shows what is being searched (e.g. "Searching in Orders"). |
-| Empty-results state | "No results for X" with spelling suggestion and related categories. Empty-state anatomy in `./.md`. |
-| Voice search | Microphone icon in the bar (see `./.md`). |
+| Empty-results state | "No results for X" with spelling suggestion and related categories. Empty-state anatomy in `./error-handling.md`. |
+| Voice search | Microphone icon in the bar (see `./multimodal-input.md`). |
 | Typo tolerance | Fuzzy matching handles common misspellings. |
 | Blank-state suggestions | With empty bar, show trending or personalized suggestions. |
 
@@ -31,7 +31,7 @@ Search is often the fastest path to content. A poor search experience is one of 
 
 ## Related
 
-- `./.md` — labels and categorization that make search findable.
-- `./.md` — empty-state standards.
-- `./.md` — semantic search and natural-language queries.
-- `./.md` — voice and image search input.
+- `./information-architecture.md` — labels and categorization that make search findable.
+- `./error-handling.md` — empty-state standards.
+- `./ai-automation.md` — semantic search and natural-language queries.
+- `./multimodal-input.md` — voice and image search input.
